@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap");
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --container-gap: 12px;
+  --navbar-h: 80px;
+}
+
+/* sm */
+@media (min-width: 640px) {
+  :root {
+    --container-gap: 12px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  :root {
+    --container-gap: 24px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  :root {
+    --container-gap: 36px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  :root {
+    --container-gap: 48px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  :root {
+    --container-gap: 64px;
+    --navbar-h: 120px;
+  }
+}
+
+@theme {
+  /* fonts */
+  --font-default:
+    "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-poppins: "Poppins", var(--font-default);
+  --font-yellowtail: "Yellowtail", cursive, var(--font-default);
+
+  /* z-index */
+  --z-index-navbar: 1000;
+  --z-index-popup: 1001;
+
+  /* spacing */
+  --spacing-container-max: 2160px;
+  --spacing-container-gap: var(--container-gap);
+  --spacing-navbar: var(--navbar-h);
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply font-default antialiased bg-white text-black m-0 p-0;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {}
+
+@keyframes searchModalBackdropIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes searchModalBackdropOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes searchModalContentIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes searchModalContentOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+#search-modal:not(.hidden)>.search-modal-backdrop {
+  animation: searchModalBackdropIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+#search-modal:not(.hidden)>.site-container>.search-modal-content {
+  animation: searchModalContentIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both;
+}
+
+#search-modal.search-modal-closing>.search-modal-backdrop {
+  animation: searchModalBackdropOut 0.25s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+#search-modal.search-modal-closing>.site-container>.search-modal-content {
+  animation: searchModalContentOut 0.2s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+@layer components {
+  .site-container {
+    @apply w-full mx-auto;
+    @apply max-w-full xl:max-w-container-max;
+    @apply px-container-gap;
+  }
+
+  .site-section-gap {
+    @apply py-8 xl:py-16;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .table-wrapper {
+    @apply w-full overflow-hidden overflow-x-auto;
+
+    table {
+      @apply w-full border border-zinc-200 text-sm text-center;
+
+      thead {
+        @apply bg-zinc-400 text-white;
+      }
+
+      tr {
+        @apply border-b border-zinc-200 last:border-b-0;
+      }
+
+      th {
+        @apply px-6 py-4 font-semibold uppercase whitespace-nowrap border-r border-zinc-200 last:border-r-0;
+      }
+
+      td {
+        @apply px-6 py-4 text-black whitespace-nowrap border-r border-zinc-200 last:border-r-0;
+      }
+    }
+  }
+}

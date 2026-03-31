@@ -1,0 +1,10 @@
+{
+  "name": "agromaster-html",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./css/tailwind-input.css -o ./css/tailwind-output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}

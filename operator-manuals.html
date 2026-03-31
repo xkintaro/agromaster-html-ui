@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/tailwind-output.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/fancybox.css" />
+    <title>
+        Operator Manuals
+    </title>
+</head>
+
+<body data-aether-auto>
+    <!--Header-->
+    <header class="fixed top-0 w-full z-navbar bg-white h-navbar flex items-center shadow-xs sm:shadow-md">
+        <div class="site-container flex items-center justify-between">
+            <!--Logo-->
+            <a href="index.html" class="flex items-center">
+                <img src="images/logo.webp" loading="eager" fetchpriority="high" alt="Logo" class="max-sm:w-48" />
+            </a>
+            <!--Menu-->
+            <nav class="flex items-center gap-5 xl:gap-8">
+                <div class="hidden 2xl:flex items-center gap-5 xl:gap-8">
+                    <a href="products.html"
+                        class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+                        PRODUCTS
+                    </a>
+                    <a href="spare-parts.html"
+                        class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+                        SPARE PARTS
+                    </a>
+                    <a href="index.html"
+                        class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+                        HOMEPAGE
+                    </a>
+                    <a href="company.html"
+                        class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+                        COMPANY
+                    </a>
+                    <div class="relative group">
+                        <a href="#"
+                            class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+                            MEDIA
+                        </a>
+                        <div
+                            class="absolute invisible opacity-0 translate-y-3 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out top-full inset-x-1/2 -translate-x-1/2 w-72">
+                            <div
+                                class="relative flex flex-col gap-8 p-10 justify-center items-center text-center border border-black/10 bg-white shadow-sm">
+                                <a href="catalogs.html"
+                                    class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                                    Catalogs
+                                </a>
+                                <a href="operator-manuals.html"
+                                    class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                                    Oparator Manuals
+                                </a>
+                                <a href="news.html" class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                                    News
+                                </a>
+                                <a href="#" class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                                    Events
+                                </a>
+                                <a href="photos.html"
+                                    class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                                    Photo Gallery
+                                </a>
+                                <a href="videos.html"
+                                    class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                                    Video Gallery
+                                </a>
+                                <a href="showroom.html"
+                                    class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                                    Showroom Overview
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html"
+                        class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+                        CONTACT
+                    </a>
+                </div>
+                <div class="flex items-center gap-2 sm:gap-5">
+                    <!--Search Button-->
+                    <button data-aether-trigger="ui-control" data-aether-target="search-modal" aria-label="Open search"
+                        class="size-10 sm:size-12 p-2 sm:p-3 flex items-center justify-center rounded-full cursor-pointer border border-black text-black">
+                        <i data-aether-icon="magnifier" class="size-full">
+                        </i>
+                    </button>
+                    <!--Language Switcher-->
+                    <button aria-label="Change language" aria-haspopup="true" aria-expanded="false"
+                        class="relative size-10 sm:size-12 p-2 sm:p-3 hidden 2xl:flex items-center justify-center rounded-full cursor-pointer border border-black text-black group">
+                        <img class="size-full rounded-full" src="flags/gb.svg" alt="gb" />
+                        <div
+                            class="absolute invisible opacity-0 max-h-0 group-hover:visible group-hover:opacity-100 group-hover:max-h-60 overflow-hidden transition-all duration-300 ease-out top-full inset-x-1/2 -translate-x-1/2 w-12">
+                            <div class="relative pt-2">
+                                <div
+                                    class="flex flex-col gap-3 p-3 justify-center items-center text-center border border-black/10 bg-white shadow-sm rounded-full">
+                                    <a href="#" class="size-full">
+                                        <img src="flags/de.svg" alt="de" loading="lazy"
+                                            class="size-full rounded-full" />
+                                    </a>
+                                    <a href="#" class="size-full">
+                                        <img src="flags/es.svg" alt="es" loading="lazy"
+                                            class="size-full rounded-full" />
+                                    </a>
+                                    <a href="#" class="size-full">
+                                        <img src="flags/fr.svg" alt="fr" loading="lazy"
+                                            class="size-full rounded-full" />
+                                    </a>
+                                    <a href="#" class="size-full">
+                                        <img src="flags/tr.svg" alt="tr" loading="lazy"
+                                            class="size-full rounded-full" />
+                                    </a>
+                                    <a href="#" class="size-full">
+                                        <img src="flags/ru.svg" alt="ru" loading="lazy"
+                                            class="size-full rounded-full" />
+                                    </a>
+                                    <a href="#" class="size-full">
+                                        <img src="flags/sa.svg" alt="sa" loading="lazy"
+                                            class="size-full rounded-full" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <!--Offcanvas Menu-->
+                    <button data-aether-trigger="ui-control" data-aether-target="offcanvas" aria-label="Open menu"
+                        class="size-10 sm:size-12 p-2 sm:p-3 flex 2xl:hidden items-center justify-center rounded-full cursor-pointer border border-black text-black">
+                        <i data-aether-icon="menu" class="size-full">
+                        </i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Offcanvas Menu-->
+    <div id="offcanvas" data-aether-scroll-lock data-aether-click-outside data-aether-focus-trap
+        class="hidden fixed inset-0 z-popup flex justify-end">
+        <div class="absolute inset-0 backdrop-blur-xl" data-aether-trigger="ui-control" data-aether-target="offcanvas">
+        </div>
+        <div
+            class="relative w-full sm:max-w-[450px] h-full sm:border-l border-black/20 shadow-md flex flex-col bg-white/80 backdrop-blur-xl">
+            <!--Header-->
+            <div class="px-container-gap sm:px-4 h-navbar border-b border-black/20 flex items-center justify-between">
+                <!--Logo-->
+                <a href="index.html" class="flex items-center">
+                    <img src="images/logo.webp" loading="lazy" alt="Logo" class="max-sm:w-48" />
+                </a>
+                <!--Close Button-->
+                <button data-aether-trigger="ui-control" data-aether-target="offcanvas" aria-label="Close menu"
+                    class="size-10 sm:size-12 p-2 flex items-center justify-center rounded-full cursor-pointer">
+                    <i data-aether-icon="close" class="size-full">
+                    </i>
+                </button>
+            </div>
+            <!--Menu-->
+            <div class="flex-1 overflow-y-auto p-5 space-y-6 no-scrollbar">
+                <div class="space-y-1">
+                    <div class="text-[10px] font-bold text-tertiary uppercase tracking-wider px-2 mb-4">
+                        Navigation
+                    </div>
+                    <a href="#"
+                        class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer">
+                        <span class="text-sm font-medium">
+                            HOMEPAGE
+                        </span>
+                    </a>
+                    <a href="#"
+                        class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer">
+                        <span class="text-sm font-medium">
+                            SPARE PARTS
+                        </span>
+                    </a>
+                    <div data-aether-ui="accordion-group">
+                        <button data-aether-trigger="accordion" data-aether-target="offcanvas-products-menu"
+                            class="w-full justify-between flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer group">
+                            <span class="text-sm font-medium">
+                                PRODUCTS
+                            </span>
+                            <i data-aether-icon="down-chevron"
+                                class="size-4 text-xs fill-current text-tertiary group-aria-expanded:rotate-180 transition-transform">
+                            </i>
+                        </button>
+                        <div id="offcanvas-products-menu" data-aether-ui="accordion-panel">
+                            <div class="pl-10 pr-2 py-1 space-y-1 border-l border-black/20 ml-5">
+                                <a href="#"
+                                    class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">
+                                    Test Product 1
+                                </a>
+                                <a href="#"
+                                    class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">
+                                    Test Product 2
+                                </a>
+                                <a href="#"
+                                    class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">
+                                    Test Product 3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#"
+                        class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer">
+                        <span class="text-sm font-medium">
+                            MEDIA
+                        </span>
+                    </a>
+                    <a href="#"
+                        class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer">
+                        <span class="text-sm font-medium">
+                            COMPANY
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!--Language Swticher-->
+            <div class="p-5 border-t border-black/20 space-y-4">
+                <div data-aether-ui="accordion-group">
+                    <button data-aether-trigger="accordion" data-aether-target="offcanvas-language"
+                        class="w-full flex items-center cursor-pointer justify-between px-3 py-2 rounded-lg border border-black/20 hover:border-black/20-interactive bg-transparent text-sm text-secondary hover:text-secondary-interactive group transition-colors">
+                        <div class="flex items-center gap-2">
+                            <img src="flags/gb.svg" loading="lazy" alt="en"
+                                class="size-5 rounded-full border border-black/20" />
+                            <span class="font-medium uppercase">
+                                en
+                            </span>
+                        </div>
+                        <i data-aether-icon="down-chevron"
+                            class="size-4 text-xs fill-current text-tertiary group-aria-expanded:rotate-180 transition-transform">
+                        </i>
+                    </button>
+                    <div id="offcanvas-language" data-aether-ui="accordion-panel">
+                        <div class="pl-10 pr-2 py-1 space-y-1 border-l border-black/20 ml-5 mt-1">
+                            <a href="#"
+                                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                                <img src="flags/de.svg" loading="lazy" alt="en"
+                                    class="size-5 rounded-full border border-black/20" />
+                                <span class="font-medium uppercase">
+                                    de
+                                </span>
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                                <img src="flags/es.svg" loading="lazy" alt="en"
+                                    class="size-5 rounded-full border border-black/20" />
+                                <span class="font-medium uppercase">
+                                    es
+                                </span>
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                                <img src="flags/fr.svg" loading="lazy" alt="en"
+                                    class="size-5 rounded-full border border-black/20" />
+                                <span class="font-medium uppercase">
+                                    fr
+                                </span>
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                                <img src="flags/tr.svg" loading="lazy" alt="tr"
+                                    class="size-5 rounded-full border border-black/20" />
+                                <span class="font-medium uppercase">
+                                    tr
+                                </span>
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                                <img src="flags/ru.svg" loading="lazy" alt="en"
+                                    class="size-5 rounded-full border border-black/20" />
+                                <span class="font-medium uppercase">
+                                    ru
+                                </span>
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                                <img src="flags/sa.svg" loading="lazy" alt="en"
+                                    class="size-5 rounded-full border border-black/20" />
+                                <span class="font-medium uppercase">
+                                    ar
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Search Modal-->
+    <div id="search-modal" data-aether-scroll-lock data-aether-click-outside data-aether-focus-trap
+        aria-label="Site Search" class="hidden fixed inset-0 z-popup">
+        <div class="search-modal-backdrop absolute inset-0 max-sm:backdrop-blur-md max-sm:bg-black/10"
+            data-aether-trigger="ui-control" data-aether-target="search-modal">
+        </div>
+        <div class="site-container">
+            <div
+                class="search-modal-content relative mt-[calc(var(--navbar-h)+1rem)] flex flex-col pt-4 md:pt-8 pb-20 px-4 md:px-24 xl:px-48 2xl:px-56 bg-white text-[#E30613] rounded-3xl shadow-xs sm:shadow-md">
+                <div class="w-full flex justify-end sm:justify-center items-center mb-6">
+                    <button data-aether-trigger="ui-control" data-aether-target="search-modal" aria-label="Close search"
+                        class="size-12 cursor-pointer bg-transparent border-none p-0">
+                        <i data-aether-icon="close" class="size-full">
+                        </i>
+                    </button>
+                </div>
+                <p class="text-2xl text-[#E30613] font-bold mb-6">
+                    What did you need?
+                </p>
+                <div class="w-full flex flex-col sm:flex-row gap-6 justify-center items-center mb-4">
+                    <input type="text" data-aether-autofocus placeholder="Please enter the keyword..."
+                        aria-label="Search"
+                        class="w-full flex-1 border-b border-[#E30613] bg-transparent outline-none py-2 h-12" />
+                    <button type="submit" aria-label="Search"
+                        class="border border-[#E30613] text-[#E30613] py-2 px-12 font-bold uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 max-sm:w-full">
+                        Search
+                    </button>
+                </div>
+                <p class="text-[#AFAFAF] max-sm:hidden">
+                    Top searches : Cultivation, seeding, fertilization, crop protection,
+                    harvesting / haymaking
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="h-navbar">
+    </div>
+    <!--Hero-->
+    <section class="relative w-full flex">
+        <img src="images/20260306093342457.webp" alt=""
+            class="w-full max-h-[70vh] xl:h-[70vh] object-cover select-none pointer-events-none" />
+        <div
+            class="absolute top-8 sm:top-16 right-container-gap 2xl:right-[calc(var(--container-gap)+4rem)] bg-[#F9F9F9]/80 backdrop-blur-xs rounded-full py-4 px-8">
+            <div class="text-black/50 text-sm inline-flex items-center gap-2">
+                <a href="index.html" class="whitespace-nowrap">HOME</a> | <h1 class="font-bold whitespace-nowrap">
+                    OPERATOR MANUALS
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!--Form-->
+    <section class="bg-[#F9F9F9] py-12 2xl:py-20">
+        <div class="flex flex-col mx-auto max-w-[1440px] px-4 sm:px-8 gap-3">
+            <!--Header-->
+            <div class="mb-2 sm:mb-5">
+                <p class="text-black/40 uppercase sm:text-lg max-sm:text-center max-sm:justify-center">
+                    Operator Manuals
+                </p>
+                <p class="text-2xl sm:text-3xl xl:max-w-xl font-bold max-sm:text-center max-sm:justify-center">
+                    To access the user manual you requested, please contact us.
+                </p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-3">
+                <!--Form-->
+                <form action="" aria-label="Operator Manuals Form" class="flex-1 flex flex-col gap-3 w-full">
+                    <input type="text" placeholder="NAME / SURNAME*" aria-label="Name / Surname" required
+                        autocomplete="name"
+                        class="bg-white rounded-full w-full px-6 sm:px-12 h-14 md:h-16 shrink-0 outline-none border border-transparent focus:border-[#E30613]" />
+                    <input type="text" placeholder="COUNTRY*" aria-label="Country" required autocomplete="country-name"
+                        class="bg-white rounded-full w-full px-6 sm:px-12 h-14 md:h-16 shrink-0 outline-none border border-transparent focus:border-[#E30613]" />
+                    <input type="email" placeholder="E-MAIL*" aria-label="Email" required autocomplete="email"
+                        class="bg-white rounded-full w-full px-6 sm:px-12 h-14 md:h-16 shrink-0 outline-none border border-transparent focus:border-[#E30613]" />
+                    <textarea placeholder="MESSAGE*" aria-label="Message" required
+                        class="bg-white rounded-4xl w-full px-6 sm:px-12 py-4 sm:py-8 h-42 sm:h-64 resize-y outline-none border border-transparent focus:border-[#E30613]"></textarea>
+                    <div class="sm:flex w-full items-start justify-between gap-2">
+                        <div>
+                            reCAPTCHA
+                        </div>
+                        <button type="submit" aria-label="Send Operator Manuals Form"
+                            class="max-sm:mt-2 cursor-pointer border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+                            <span class="group-hover:-translate-x-4 transition-all duration-300">
+                                SEND
+                            </span>
+                            <i data-aether-icon="right-arrow"
+                                class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                            </i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <!--Newsletter-->
+        <div class="bg-[#E30613] w-full py-20">
+            <div class="site-container">
+                <div class="md:flex items-center justify-between gap-8 sm:gap-16 xl:gap-32 2xl:gap-48">
+                    <p class="text-white sm:text-xl max-md:mb-8 2xl:max-w-xl">
+                        Join us to stay informed about developments in the agricultural
+                        sector!
+                    </p>
+                    <div class="w-full flex-1">
+                        <div class="xl:flex items-center gap-5 flex-1">
+                            <!--Mail-->
+                            <form action=""
+                                class="max-xl:mb-5 w-full bg-[#BF0000] h-16 px-2 flex items-center justify-between rounded-full overflow-hidden">
+                                <input type="email" placeholder="E-Mail Address" aria-label="Newsletter e-mail"
+                                    autocomplete="email"
+                                    class="px-4 h-full bg-transparent border-none outline-none text-white flex-1" />
+                                <button type="submit" aria-label="Subscribe to newsletter"
+                                    class="border border-white cursor-pointer text-white py-2 px-4 sm:px-12 font-semibold sm:font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit flex items-center group gap-2 transition-all duration-300 hover:text-[#E30613] hover:bg-white active:scale-95">
+                                    <span class="group-hover:-translate-x-4 transition-all duration-300">
+                                        SEND
+                                    </span>
+                                    <i data-aether-icon="right-arrow"
+                                        class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                                    </i>
+                                </button>
+                            </form>
+                            <!--Phone-->
+                            <form action=""
+                                class="w-full bg-white h-16 px-2 flex items-center justify-between rounded-full overflow-hidden">
+                                <input type="tel" placeholder="Phone Number" aria-label="Phone number for newsletter"
+                                    autocomplete="tel"
+                                    class="px-4 h-full bg-transparent border-none outline-none text-[#E30613] flex-1" />
+                                <button type="submit" aria-label="Subscribe via phone"
+                                    class="border border-[#E30613] cursor-pointer text-[#E30613] py-2 px-4 sm:px-12 font-semibold sm:font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+                                    <span class="group-hover:-translate-x-4 transition-all duration-300">
+                                        SEND
+                                    </span>
+                                    <i data-aether-icon="right-arrow"
+                                        class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                                    </i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="mt-5 text-sm text-white flex items-center gap-2">
+                            I consent to the collection and storage of the data I submit.
+                            <div class="inline-flex items-center">
+                                <label class="flex items-center cursor-pointer relative">
+                                    <input type="checkbox"
+                                        class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-blue-600 checked:border-blue-600"
+                                        id="check1" />
+                                    <span
+                                        class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20"
+                                            fill="currentColor" stroke="currentColor" stroke-width="1">
+                                            <path fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#2A2A2A]">
+            <div class="site-container">
+                <!--Header-->
+                <div
+                    class="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-8 lg:gap-16 py-12 sm:py-16 border-b border-[#797979]">
+                    <!--Logo-->
+                    <div class="flex items-center gap-4 sm:gap-8">
+                        <div class="text-center">
+                            <img src="images/logo-2.webp" alt="Logo" loading="lazy" class="max-sm:w-48 sm:mb-2" />
+                            <p class="text-[#D1D1D1] font-normal max-sm:hidden">
+                                Agromaster is a brand of Ateşpar.
+                            </p>
+                        </div>
+                        <div class="w-px h-full bg-[#797979] min-h-10 sm:min-h-20">
+                        </div>
+                        <p class="font-yellowtail text-[#D1D1D1] text-xl sm:text-3xl xl:text-5xl">
+                            We knows the soil.
+                        </p>
+                    </div>
+                    <div class="flex items-center max-sm:justify-center gap-5 md:gap-12">
+                        <p class="text-[#D1D1D1] text-lg sm:text-xl 2xl:text-2xl font-light max-xl:hidden">
+                            FOLLOW US
+                        </p>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <svg class="text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95"
+                                xmlns="http://www.w3.org/2000/svg" width="35" height="28" viewBox="0 0 35 28"
+                                fill="none" aria-hidden="true">
+                                <path
+                                    d="M22.8641 12.7434L15.3125 7.70897C15.1702 7.61406 15.0049 7.55958 14.8341 7.55134C14.6633 7.5431 14.4934 7.58142 14.3427 7.66219C14.192 7.74296 14.066 7.86316 13.9783 8.00995C13.8906 8.15674 13.8444 8.3246 13.8446 8.4956V18.5644C13.8444 18.7354 13.8906 18.9033 13.9783 19.0501C14.066 19.1969 14.192 19.3171 14.3427 19.3978C14.4934 19.4786 14.6633 19.5169 14.8341 19.5087C15.0049 19.5004 15.1702 19.446 15.3125 19.351L22.8641 14.3166C22.9939 14.2305 23.1004 14.1136 23.174 13.9764C23.2477 13.8391 23.2862 13.6858 23.2862 13.53C23.2862 13.3742 23.2477 13.2209 23.174 13.0836C23.1004 12.9464 22.9939 12.8295 22.8641 12.7434ZM15.7325 16.8008V10.2592L20.6379 13.53L15.7325 16.8008ZM33.7305 4.40514C33.594 3.87449 33.3333 3.38385 32.9701 2.97358C32.6069 2.56332 32.1515 2.24515 31.6413 2.04526C26.2733 -0.033007 17.6629 3.13708e-05 17.3058 3.13708e-05C16.9487 3.13708e-05 8.33824 -0.033007 2.96401 2.04526C2.45499 2.24597 2.00081 2.5645 1.63873 2.97471C1.27665 3.38493 1.01698 3.87514 0.881022 4.40514C0.479842 5.96109 0 8.81025 0 13.53C0 18.2498 0.479842 21.0989 0.881022 22.6549C1.01761 23.1855 1.27823 23.6762 1.64145 24.0864C2.00468 24.4967 2.46011 24.8149 2.9703 25.0148C8.33824 27.093 16.9471 27.06 17.3058 27.06H17.4175C18.5046 27.06 26.5424 26.9908 31.6476 25.0148C32.1577 24.8149 32.6132 24.4967 32.9764 24.0864C33.3396 23.6762 33.6003 23.1855 33.7368 22.6549C34.138 21.1021 34.6179 18.2608 34.6179 13.53C34.6179 8.79924 34.1396 5.96109 33.7305 4.40514ZM31.9024 22.1829C31.8418 22.4247 31.7247 22.6487 31.5605 22.8363C31.3964 23.024 31.1901 23.1699 30.9585 23.2622C25.9241 25.202 17.397 25.1721 17.3058 25.1721C17.2145 25.1721 8.69852 25.2035 3.65781 23.2574C3.42622 23.1652 3.21986 23.0192 3.05574 22.8316C2.89162 22.644 2.77444 22.42 2.71386 22.1782C2.33471 20.7324 1.8879 18.0578 1.8879 13.53C1.8879 9.00219 2.33471 6.32766 2.70914 4.87712C2.76972 4.6353 2.8869 4.41135 3.05102 4.2237C3.21514 4.03606 3.4215 3.89011 3.65309 3.79786C8.50501 1.92884 16.6025 1.88794 17.268 1.88794H17.3058C17.3907 1.88794 25.913 1.85647 30.9538 3.80258C31.1853 3.89483 31.3917 4.04078 31.5558 4.22842C31.7199 4.41607 31.8371 4.64002 31.8977 4.88184C32.2721 6.32766 32.7189 9.00219 32.7189 13.5347C32.7189 18.0673 32.2769 20.7324 31.9024 22.1829Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <!--Back To Top Button-->
+                        <button id="back-to-top" title="Back to Top"
+                            class="size-10 p-2 xl:size-14 xl:p-4 2xl:size-18 2xl:p-5 cursor-pointer rounded-full border border-[#747474] text-[#747474] hover:border-white hover:text-white transition-all duration-300 focus:outline-none active:scale-95"
+                            aria-label="Back to Top">
+                            <i data-aether-icon="up-arrow" class="size-full">
+                            </i>
+                        </button>
+                    </div>
+                </div>
+                <!--Nav-->
+                <div class="flex justify-around gap-12 py-16 xl:py-24 border-b border-[#797979]">
+                    <!--Links-->
+                    <div class="flex flex-col gap-6 sm:gap-12">
+                        <a href="#"
+                            class="sm:text-xl 2xl:text-2xl text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95 font-bold">
+                            Homepage
+                        </a>
+                        <a href="#"
+                            class="sm:text-xl 2xl:text-2xl text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95 font-bold">
+                            Agromaster
+                        </a>
+                        <a href="#"
+                            class="sm:text-xl 2xl:text-2xl text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95 font-bold">
+                            Products
+                        </a>
+                        <a href="#"
+                            class="sm:text-xl 2xl:text-2xl text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95 font-bold">
+                            Media
+                        </a>
+                        <a href="#"
+                            class="sm:text-xl 2xl:text-2xl text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95 font-bold">
+                            Contact
+                        </a>
+                    </div>
+                    <!--Contact-->
+                    <div class="flex flex-col gap-6 sm:gap-12 max-w-sm max-sm:items-end max-sm:text-end">
+                        <p class="text-[#D1D1D1] text-2xl sm:text-3xl 2xl:text-4xl font-bold">
+                            Contact Us
+                        </p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="text-[#D1D1D1] sm:text-xl 2xl:text-2xl hover:text-white transition-all duration-300 active:scale-95">
+                            info@agromaster.com
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="text-[#D1D1D1] sm:text-xl 2xl:text-2xl hover:text-white transition-all duration-300 active:scale-95">
+                            0 332 235 64 23
+                        </a>
+                        <p class="text-[#D1D1D1] sm:text-xl 2xl:text-2xl">
+                            Büyükkayacık Osb. Mah, Evrenköy Cd. No: 32, 42250 Büyükkayacık
+                            OSB/Selçuklu/Konya
+                        </p>
+                    </div>
+                </div>
+                <!--Copyright-->
+                <div
+                    class="flex flex-wrap items-center justify-center xl:justify-around gap-12 py-12 sm:py-16 border-b border-[#797979]">
+                    <a href="#"
+                        class="text-[#D1D1D1] sm:text-lg 2xl:text-xl shrink-0 whitespace-nowrap hover:text-white transition-all duration-300 active:scale-95">
+                        Information
+                        Society Services
+                    </a>
+                    <a href="#"
+                        class="text-[#D1D1D1] sm:text-lg 2xl:text-xl shrink-0 whitespace-nowrap hover:text-white transition-all duration-300 active:scale-95">
+                        Personal
+                        Data Protection Law
+                    </a>
+                    <a href="#"
+                        class="text-[#D1D1D1] sm:text-lg 2xl:text-xl shrink-0 whitespace-nowrap hover:text-white transition-all duration-300 active:scale-95">
+                        Security
+                        and Privacy
+                    </a>
+                    <a href="#"
+                        class="text-[#D1D1D1] sm:text-lg 2xl:text-xl shrink-0 whitespace-nowrap hover:text-white transition-all duration-300 active:scale-95">
+                        Terms
+                        of Use
+                    </a>
+                </div>
+                <div class="flex justify-center sm:justify-end items-center py-12 sm:py-16">
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Post Ajans">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="31" viewBox="0 0 80 31" fill="none">
+                            <g clip-path="url(#clip0_283_794)">
+                                <path
+                                    d="M79.9816 25.3584V25.7414H5.98816V25.3584H79.9816ZM79.9816 25.7414H5.98816V25.3584H79.9816V25.7414Z"
+                                    fill="#4F4F4F" />
+                                <path
+                                    d="M3.95804 4.11791C5.83572 2.5741 8.11038 1.80135 10.7837 1.8047C14.3448 1.80972 17.3296 2.86011 19.7299 4.95086C22.0682 7.02489 23.2273 9.57226 23.2407 12.5947C23.2457 15.617 22.09 18.1494 19.7735 20.2117C17.3698 22.3141 14.4017 23.3629 10.8356 23.3595C9.31639 23.3562 7.67656 23.0685 5.92952 22.4914L6.73688 21.2838C7.99648 21.9746 9.39511 22.3175 10.9277 22.3242C13.0299 22.3242 14.8774 21.3942 16.4486 19.5343C18.0147 17.6743 18.7969 15.3494 18.7919 12.5662C18.7869 9.67596 18.0314 7.33432 16.5223 5.53627C15.0131 3.74157 13.0064 2.84171 10.4973 2.83837C9.12041 2.83837 7.80721 3.25819 6.56603 4.09784C5.33657 4.94083 4.20092 6.73218 4.02504 8.76105V31H0V8.27934C0 8.27934 2.05356 5.49948 3.95804 4.11791Z"
+                                    fill="#4F4F4F" />
+                                <path
+                                    d="M52.3708 12.6379C52.3758 15.6369 50.9956 18.1876 48.2452 20.3001C45.4764 22.4043 42.1381 23.4614 38.2237 23.4563C34.3242 23.448 30.9977 22.3892 28.2272 20.2767C25.4568 18.1575 24.0698 15.5985 24.0648 12.6012C24.0648 9.63396 25.4249 7.08324 28.1954 4.96907C30.9558 2.86494 34.2773 1.81287 38.1717 1.81789C42.0963 1.81789 45.4329 2.88166 48.2084 4.99249C50.9688 7.11502 52.3657 9.66406 52.3708 12.6379ZM47.9219 12.6346C47.9169 9.94506 46.9571 7.64691 45.061 5.75018C43.1482 3.85177 40.8735 2.90508 38.2119 2.90508C35.5336 2.89672 33.2388 3.84006 31.3578 5.73847C29.4516 7.62851 28.5086 9.92164 28.5203 12.6078C28.5254 15.2974 29.4684 17.5972 31.3812 19.5057C33.2774 21.4141 35.5788 22.3742 38.2572 22.3758C40.9171 22.3825 43.185 21.4275 45.0929 19.5174C46.9823 17.6156 47.9303 15.3241 47.9236 12.6346H47.9219Z"
+                                    fill="#4F4F4F" />
+                                <path
+                                    d="M67.1024 18.1061C66.9333 19.757 66.1041 21.0699 64.5966 22.0568C63.0858 23.0369 61.2031 23.527 58.91 23.527C55.7626 23.527 53.1161 22.7024 50.9755 21.0683L52.2501 19.6783C54.1345 21.5182 56.3556 22.4448 58.915 22.4448C60.4862 22.4448 61.734 22.0819 62.6519 21.3476C63.5832 20.6117 64.0338 19.6583 64.0338 18.4824C64.0338 17.0808 63.2097 15.92 61.5397 14.9984C60.3773 14.403 58.6554 13.5115 56.369 12.3406C53.3004 10.7617 51.7661 8.88839 51.7661 6.69895C51.761 5.11333 52.6036 3.87058 54.2752 2.9657C55.776 2.18794 57.6068 1.80492 59.791 1.81161C61.0758 1.80826 62.389 2.06417 63.7172 2.56094C65.0405 3.05937 66.0137 3.63642 66.6435 4.30379L65.3722 5.6335C63.6218 3.91742 61.5933 2.89378 59.4862 2.89044C56.637 2.88709 55.0725 3.76688 54.7794 5.51475C54.5818 6.92643 55.4913 8.15244 57.5415 9.20284C60.6269 10.7985 62.5933 11.8355 63.4576 12.3289C66.136 13.8644 67.357 15.7962 67.1008 18.1078L67.1024 18.1061Z"
+                                    fill="#4F4F4F" />
+                                <path
+                                    d="M79.0235 5.87418H74.8293V16.716C74.8343 18.8469 75.2497 20.3422 76.0085 21.2103C76.779 22.08 78.0972 22.5182 79.98 22.5216V23.5452C73.8545 23.5419 70.7205 21.2504 70.7188 16.6892V5.87585L66.198 5.88087L67.4677 4.54948H70.7188V0L74.8293 0.00669041V4.53944L79.6383 4.54279L79.0235 5.87585V5.87418Z"
+                                    fill="#4F4F4F" />
+                                <path
+                                    d="M24.3245 29.9479L24.4484 29.9864C24.4484 30.0215 24.4484 30.06 24.4501 30.1034C24.4551 30.1469 24.4702 30.1837 24.4987 30.2138C24.5389 30.2707 24.6394 30.3242 24.8052 30.3777C24.9693 30.4313 25.1586 30.4564 25.3713 30.4564C25.6209 30.4564 25.8052 30.4229 25.9291 30.3543C26.0531 30.2858 26.115 30.1469 26.115 29.9379V27.9475C26.115 27.8906 26.0899 27.8454 26.038 27.8103C25.9844 27.7752 25.9375 27.7585 25.899 27.7585V27.6196H27.187V27.7585C27.1301 27.7585 27.0748 27.7752 27.0229 27.8103C26.971 27.8471 26.9458 27.8906 26.9458 27.9475V30.0315C26.9458 30.2155 26.9056 30.3711 26.8236 30.4965C26.7432 30.6236 26.6309 30.7257 26.4902 30.8026C26.3512 30.8779 26.1837 30.9297 25.9894 30.9598C25.7951 30.9866 25.5874 31 25.3646 31C25.2373 31 25.1134 30.9916 24.9911 30.9749C24.8705 30.9565 24.7566 30.9347 24.6528 30.9063C24.5506 30.8795 24.4585 30.8511 24.3764 30.831C24.2977 30.8076 24.2307 30.7959 24.1771 30.7959C24.1318 30.7959 24.0967 30.8059 24.0732 30.8227C24.0498 30.8411 24.0263 30.8611 23.9945 30.8862L23.9208 30.826L24.3245 29.9479Z"
+                                    fill="#4F4F4F" />
+                                <path
+                                    d="M58.4578 30.8413C58.5616 30.8413 58.6136 30.8029 58.6136 30.7259V27.8741C58.6136 27.7972 58.5616 27.7604 58.4578 27.7604V27.6216H59.7291V27.7604C59.6906 27.7654 59.6688 27.7771 59.6688 27.7989C59.6688 27.8223 59.7325 27.8909 59.8581 28.0046L61.9334 29.9415V27.8758C61.9334 27.7989 61.8748 27.7621 61.7592 27.7621V27.6233H62.8145V27.7621C62.7106 27.7621 62.6587 27.8006 62.6587 27.8758V30.7276C62.6587 30.8045 62.7106 30.843 62.8145 30.843V30.9802H61.6922V30.843C61.7307 30.843 61.7492 30.8313 61.7492 30.8045C61.7492 30.7828 61.7224 30.7493 61.6654 30.6975C61.6118 30.6456 61.5515 30.5871 61.4795 30.5219L59.3372 28.5081V30.7276C59.3372 30.8045 59.3975 30.843 59.5164 30.843V30.9802H58.4528V30.843L58.4578 30.8413Z"
+                                    fill="#4F4F4F" />
+                                <path
+                                    d="M76.7153 29.8106C76.7153 29.8306 76.712 29.854 76.7086 29.8758C76.7086 29.8992 76.7036 29.9226 76.7036 29.9477C76.7036 30.023 76.7606 30.0949 76.8728 30.1585C76.9783 30.2203 77.1106 30.2755 77.2647 30.319C77.4155 30.3608 77.5679 30.396 77.722 30.4211C77.8744 30.4478 77.9934 30.4595 78.0788 30.4595C78.1642 30.4595 78.2597 30.4545 78.3786 30.4461C78.4959 30.4361 78.6131 30.4144 78.727 30.3826C78.8443 30.3475 78.9431 30.304 79.0235 30.2438C79.1022 30.1852 79.1441 30.1066 79.1441 30.0113C79.1441 29.8992 79.0737 29.8172 78.9314 29.7687C78.7907 29.7186 78.6131 29.6768 78.4004 29.6483C78.1877 29.6216 77.9565 29.5931 77.7103 29.5647C77.4624 29.5379 77.2296 29.4911 77.0185 29.4275C76.8058 29.364 76.6266 29.272 76.4875 29.1532C76.3452 29.0311 76.2731 28.8655 76.2731 28.6464C76.2731 28.3203 76.4272 28.0627 76.7338 27.867C77.0386 27.6746 77.4657 27.5776 78.0202 27.5776C78.2915 27.5776 78.5227 27.5977 78.7186 27.6362C78.9113 27.673 79.0754 27.7148 79.2061 27.7633C79.3384 27.8085 79.4439 27.8486 79.531 27.8887C79.6148 27.9255 79.6751 27.9456 79.717 27.9456C79.7622 27.9456 79.799 27.9389 79.8208 27.9255C79.8409 27.9138 79.871 27.9004 79.9062 27.8837L80 27.969L79.5695 28.6849L79.4138 28.6397C79.4087 28.6113 79.402 28.5795 79.3953 28.5477C79.3903 28.5176 79.3652 28.4859 79.3166 28.4558C79.2027 28.3704 79.0235 28.2952 78.7806 28.2366C78.5394 28.1731 78.2681 28.1446 77.9682 28.1446C77.8543 28.1446 77.7438 28.1513 77.6383 28.163C77.5378 28.1764 77.444 28.1982 77.3636 28.23C77.2848 28.2584 77.2195 28.3002 77.1726 28.347C77.1274 28.3972 77.1073 28.4558 77.1073 28.5277C77.1073 28.6381 77.176 28.7184 77.315 28.7669C77.459 28.8154 77.6332 28.8555 77.8476 28.8823C78.062 28.909 78.2915 28.9375 78.5411 28.9659C78.7873 28.9943 79.0185 29.0412 79.2295 29.1081C79.4439 29.175 79.6215 29.2703 79.7638 29.3974C79.9046 29.5245 79.9749 29.7002 79.9749 29.9226C79.9749 30.1451 79.9129 30.3291 79.789 30.4729C79.6667 30.6168 79.5109 30.7288 79.325 30.8091C79.1424 30.8894 78.9381 30.9446 78.7186 30.968C78.4959 30.9948 78.2882 31.0065 78.0922 31.0065C77.8962 31.0065 77.7019 30.9914 77.5059 30.9563C77.3167 30.9245 77.1374 30.886 76.98 30.8442C76.8209 30.7991 76.6885 30.7589 76.5797 30.7221C76.4691 30.682 76.4021 30.6636 76.3787 30.6636C76.3401 30.6636 76.3066 30.6786 76.2748 30.7104L76.1559 30.6335L76.5529 29.7771L76.717 29.8156L76.7153 29.8106Z"
+                                    fill="#4F4F4F" />
+                                <path
+                                    d="M7.06857 30.5449C7.01832 30.6286 6.9932 30.6888 6.9932 30.7423C6.9932 30.8176 7.0535 30.8343 7.15902 30.8343V30.9698H5.98987V30.8343C6.12722 30.8176 6.21599 30.6972 6.25954 30.6135L7.56102 28.1448C7.63138 28.0076 7.67493 27.924 7.67493 27.8487C7.67493 27.7885 7.64143 27.7785 7.60458 27.7651V27.6279H8.92448V27.7651C8.88763 27.7785 8.83906 27.7785 8.83906 27.8487C8.83906 27.9089 8.89601 27.9926 8.95966 28.1063L10.3767 30.6888C10.427 30.7808 10.5057 30.8176 10.5844 30.8343V30.9698H9.34323V30.8561C9.39683 30.8561 9.48393 30.8276 9.48393 30.7507C9.48393 30.6905 9.46551 30.6453 9.42363 30.5667L8.20255 28.297L7.07192 30.5466L7.06857 30.5449Z"
+                                    fill="#4F4F4F" />
+                                <path
+                                    d="M8.55431 29.6536C8.55431 29.503 8.43204 29.3843 8.28464 29.3843C8.13724 29.3843 8.01831 29.5047 8.01831 29.6536C8.01831 29.8024 8.13891 29.9229 8.28464 29.9229C8.43036 29.9229 8.55431 29.8024 8.55431 29.6536Z"
+                                    fill="#4F4F4F" />
+                                <path
+                                    d="M41.6089 30.5449C41.5586 30.6286 41.5302 30.6888 41.5302 30.7423C41.5302 30.8176 41.5905 30.8343 41.6977 30.8343V30.9698H40.5251V30.8343C40.6642 30.8176 40.7529 30.6972 40.7965 30.6135L42.098 28.1448C42.1667 28.0076 42.2102 27.924 42.2102 27.8487C42.2102 27.7885 42.1734 27.7785 42.1415 27.7651V27.6279H43.4614V27.7651C43.4263 27.7785 43.3727 27.7785 43.3727 27.8487C43.3727 27.9089 43.4346 27.9926 43.4949 28.1063L44.9103 30.6888C44.9639 30.7808 45.0426 30.8176 45.118 30.8343V30.9698H43.8802V30.8561C43.9304 30.8561 44.0192 30.8276 44.0192 30.7507C44.0192 30.6905 44.0008 30.6453 43.9572 30.5667L42.7345 28.297L41.6089 30.5466V30.5449Z"
+                                    fill="#4F4F4F" />
+                                <path
+                                    d="M43.0912 29.6536C43.0912 29.503 42.9723 29.3843 42.8215 29.3843C42.6708 29.3843 42.5552 29.5047 42.5552 29.6536C42.5552 29.8024 42.6741 29.9229 42.8215 29.9229C42.9689 29.9229 43.0912 29.8024 43.0912 29.6536Z"
+                                    fill="#4F4F4F" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_283_794">
+                                    <rect width="80" height="31" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/aether.js">
+    </script>
+    <script src="js/aether-icons.js">
+    </script>
+    <script src="js/swiper-bundle.min.js">
+    </script>
+    <script src="js/fancybox.umd.js">
+    </script>
+    <script src="js/countUp.umd.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+</body>
+
+</html>

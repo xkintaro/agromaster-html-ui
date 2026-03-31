@@ -1,0 +1,1556 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/tailwind-output.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/fancybox.css" />
+  <title>
+    Home
+  </title>
+</head>
+
+<body data-aether-auto>
+  <h1 class="sr-only">Agromaster - Agricultural Machinery</h1>
+  <!--Header-->
+  <header class="fixed top-0 w-full z-navbar bg-white h-navbar flex items-center shadow-xs sm:shadow-md">
+    <div class="site-container flex items-center justify-between">
+      <!--Logo-->
+      <a href="index.html" class="flex items-center">
+        <img src="images/logo.webp" loading="eager" fetchpriority="high" alt="Logo" class="max-sm:w-48" />
+      </a>
+      <!--Menu-->
+      <nav class="flex items-center gap-5 xl:gap-8">
+        <div class="hidden 2xl:flex items-center gap-5 xl:gap-8">
+          <a href="products.html"
+            class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+            PRODUCTS
+          </a>
+          <a href="spare-parts.html"
+            class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+            SPARE PARTS
+          </a>
+          <a href="index.html"
+            class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+            HOMEPAGE
+          </a>
+          <a href="company.html"
+            class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+            COMPANY
+          </a>
+          <div class="relative group">
+            <a href="index.html"
+              class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+              MEDIA
+            </a>
+            <div
+              class="absolute invisible opacity-0 translate-y-3 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out top-full inset-x-1/2 -translate-x-1/2 w-72">
+              <div
+                class="relative flex flex-col gap-8 p-10 justify-center items-center text-center border border-black/10 bg-white shadow-sm">
+                <a href="catalogs.html" class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                  Catalogs
+                </a>
+                <a href="operator-manuals.html" class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                  Oparator Manuals
+                </a>
+                <a href="news.html" class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                  News
+                </a>
+                <a href="#" class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                  Events
+                </a>
+                <a href="photos.html" class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                  Photo Gallery
+                </a>
+                <a href="videos.html" class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                  Video Gallery
+                </a>
+                <a href="showroom.html" class="text-lg hover:text-[#E30613] transition-colors duration-300">
+                  Showroom Overview
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html"
+            class="px-3 py-2 inline-flex items-center text-lg font-bold uppercase hover:text-[#E30613] transition-colors duration-300">
+            CONTACT
+          </a>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-5">
+          <!--Search Button-->
+          <button data-aether-trigger="ui-control" data-aether-target="search-modal" aria-label="Open search"
+            class="size-10 sm:size-12 p-2 sm:p-3 flex items-center justify-center rounded-full cursor-pointer border border-black text-black">
+            <i data-aether-icon="magnifier" class="size-full">
+            </i>
+          </button>
+          <!--Language Switcher-->
+          <button aria-label="Change language" aria-haspopup="true" aria-expanded="false"
+            class="relative size-10 sm:size-12 p-2 sm:p-3 hidden 2xl:flex items-center justify-center rounded-full cursor-pointer border border-black text-black group">
+            <img class="size-full rounded-full" src="flags/gb.svg" alt="gb" />
+            <div
+              class="absolute invisible opacity-0 max-h-0 group-hover:visible group-hover:opacity-100 group-hover:max-h-60 overflow-hidden transition-all duration-300 ease-out top-full inset-x-1/2 -translate-x-1/2 w-12">
+              <div class="relative pt-2">
+                <div
+                  class="flex flex-col gap-3 p-3 justify-center items-center text-center border border-black/10 bg-white shadow-sm rounded-full">
+                  <a href="#" class="size-full">
+                    <img src="flags/de.svg" alt="de" loading="lazy" class="size-full rounded-full" />
+                  </a>
+                  <a href="#" class="size-full">
+                    <img src="flags/es.svg" alt="es" loading="lazy" class="size-full rounded-full" />
+                  </a>
+                  <a href="#" class="size-full">
+                    <img src="flags/fr.svg" alt="fr" loading="lazy" class="size-full rounded-full" />
+                  </a>
+                  <a href="#" class="size-full">
+                    <img src="flags/tr.svg" alt="tr" loading="lazy" class="size-full rounded-full" />
+                  </a>
+                  <a href="#" class="size-full">
+                    <img src="flags/ru.svg" alt="ru" loading="lazy" class="size-full rounded-full" />
+                  </a>
+                  <a href="#" class="size-full">
+                    <img src="flags/sa.svg" alt="sa" loading="lazy" class="size-full rounded-full" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </button>
+          <!--Offcanvas Menu-->
+          <button data-aether-trigger="ui-control" data-aether-target="offcanvas" aria-label="Open menu"
+            class="size-10 sm:size-12 p-2 sm:p-3 flex 2xl:hidden items-center justify-center rounded-full cursor-pointer border border-black text-black">
+            <i data-aether-icon="menu" class="size-full">
+            </i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--Offcanvas Menu-->
+  <div id="offcanvas" data-aether-scroll-lock data-aether-click-outside data-aether-focus-trap
+    class="hidden fixed inset-0 z-popup flex justify-end">
+    <div class="absolute inset-0 backdrop-blur-xl" data-aether-trigger="ui-control" data-aether-target="offcanvas">
+    </div>
+    <div
+      class="relative w-full sm:max-w-[450px] h-full sm:border-l border-black/20 shadow-md flex flex-col bg-white/80 backdrop-blur-xl">
+      <!--Header-->
+      <div class="px-container-gap sm:px-4 h-navbar border-b border-black/20 flex items-center justify-between">
+        <!--Logo-->
+        <a href="index.html" class="flex items-center">
+          <img src="images/logo.webp" loading="lazy" alt="Logo" class="max-sm:w-48" />
+        </a>
+        <!--Close Button-->
+        <button data-aether-trigger="ui-control" data-aether-target="offcanvas" aria-label="Close menu"
+          class="size-10 sm:size-12 p-2 flex items-center justify-center rounded-full cursor-pointer">
+          <i data-aether-icon="close" class="size-full">
+          </i>
+        </button>
+      </div>
+      <!--Menu-->
+      <div class="flex-1 overflow-y-auto p-5 space-y-6 no-scrollbar">
+        <div class="space-y-1">
+          <div class="text-[10px] font-bold text-tertiary uppercase tracking-wider px-2 mb-4">
+            Navigation
+          </div>
+          <a href="#"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer">
+            <span class="text-sm font-medium">
+              HOMEPAGE
+            </span>
+          </a>
+          <a href="#"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer">
+            <span class="text-sm font-medium">
+              SPARE PARTS
+            </span>
+          </a>
+          <div data-aether-ui="accordion-group">
+            <button data-aether-trigger="accordion" data-aether-target="offcanvas-products-menu"
+              class="w-full justify-between flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer group">
+              <span class="text-sm font-medium">
+                PRODUCTS
+              </span>
+              <i data-aether-icon="down-chevron"
+                class="size-4 text-xs fill-current text-tertiary group-aria-expanded:rotate-180 transition-transform">
+              </i>
+            </button>
+            <div id="offcanvas-products-menu" data-aether-ui="accordion-panel">
+              <div class="pl-10 pr-2 py-1 space-y-1 border-l border-black/20 ml-5">
+                <a href="#" class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">
+                  Test Product 1
+                </a>
+                <a href="#" class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">
+                  Test Product 2
+                </a>
+                <a href="#" class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">
+                  Test Product 3
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer">
+            <span class="text-sm font-medium">
+              MEDIA
+            </span>
+          </a>
+          <a href="#"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer">
+            <span class="text-sm font-medium">
+              COMPANY
+            </span>
+          </a>
+        </div>
+      </div>
+      <!--Language Swticher-->
+      <div class="p-5 border-t border-black/20 space-y-4">
+        <div data-aether-ui="accordion-group">
+          <button data-aether-trigger="accordion" data-aether-target="offcanvas-language"
+            class="w-full flex items-center cursor-pointer justify-between px-3 py-2 rounded-lg border border-black/20 hover:border-black/20-interactive bg-transparent text-sm text-secondary hover:text-secondary-interactive group transition-colors">
+            <div class="flex items-center gap-2">
+              <img src="flags/gb.svg" loading="lazy" alt="en" class="size-5 rounded-full border border-black/20" />
+              <span class="font-medium uppercase">
+                en
+              </span>
+            </div>
+            <i data-aether-icon="down-chevron"
+              class="size-4 text-xs fill-current text-tertiary group-aria-expanded:rotate-180 transition-transform">
+            </i>
+          </button>
+          <div id="offcanvas-language" data-aether-ui="accordion-panel">
+            <div class="pl-10 pr-2 py-1 space-y-1 border-l border-black/20 ml-5 mt-1">
+              <a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                <img src="flags/de.svg" loading="lazy" alt="en" class="size-5 rounded-full border border-black/20" />
+                <span class="font-medium uppercase">
+                  de
+                </span>
+              </a>
+              <a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                <img src="flags/es.svg" loading="lazy" alt="en" class="size-5 rounded-full border border-black/20" />
+                <span class="font-medium uppercase">
+                  es
+                </span>
+              </a>
+              <a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                <img src="flags/fr.svg" loading="lazy" alt="en" class="size-5 rounded-full border border-black/20" />
+                <span class="font-medium uppercase">
+                  fr
+                </span>
+              </a>
+              <a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                <img src="flags/tr.svg" loading="lazy" alt="tr" class="size-5 rounded-full border border-black/20" />
+                <span class="font-medium uppercase">
+                  tr
+                </span>
+              </a>
+              <a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                <img src="flags/ru.svg" loading="lazy" alt="en" class="size-5 rounded-full border border-black/20" />
+                <span class="font-medium uppercase">
+                  ru
+                </span>
+              </a>
+              <a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors">
+                <img src="flags/sa.svg" loading="lazy" alt="en" class="size-5 rounded-full border border-black/20" />
+                <span class="font-medium uppercase">
+                  ar
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Search Modal-->
+  <div id="search-modal" data-aether-scroll-lock data-aether-click-outside data-aether-focus-trap
+    aria-label="Site Search" class="hidden fixed inset-0 z-popup">
+    <div class="search-modal-backdrop absolute inset-0 max-sm:backdrop-blur-md max-sm:bg-black/10"
+      data-aether-trigger="ui-control" data-aether-target="search-modal">
+    </div>
+    <div class="site-container">
+      <div
+        class="search-modal-content relative mt-[calc(var(--navbar-h)+1rem)] flex flex-col pt-4 md:pt-8 pb-20 px-4 md:px-24 xl:px-48 2xl:px-56 bg-white text-[#E30613] rounded-3xl shadow-xs sm:shadow-md">
+        <div class="w-full flex justify-end sm:justify-center items-center mb-6">
+          <button data-aether-trigger="ui-control" data-aether-target="search-modal" aria-label="Close search"
+            class="size-12 cursor-pointer bg-transparent border-none p-0">
+            <i data-aether-icon="close" class="size-full">
+            </i>
+          </button>
+        </div>
+        <p class="text-2xl text-[#E30613] font-bold mb-6">
+          What did you need?
+        </p>
+        <div class="w-full flex flex-col sm:flex-row gap-6 justify-center items-center mb-4">
+          <input type="text" data-aether-autofocus placeholder="Please enter the keyword..." aria-label="Search"
+            role="searchbox" class="w-full flex-1 border-b border-[#E30613] bg-transparent outline-none py-2 h-12" />
+          <button type="submit" aria-label="Search"
+            class="border border-[#E30613] text-[#E30613] py-2 px-12 font-bold uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 max-sm:w-full">
+            Search
+          </button>
+        </div>
+        <p class="text-[#AFAFAF] max-sm:hidden">
+          Top searches : Cultivation, seeding, fertilization, crop protection,
+          harvesting / haymaking
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Slider-->
+  <section class="swiperMain swiper w-full h-screen">
+    <style>
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: rgba(255, 255, 255, 0.4);
+        opacity: 1;
+        transition: all 0.3s ease;
+        border-radius: 2px !important;
+        transform: rotate(45deg);
+        margin-right: 5px !important;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: #fff;
+        width: 12px;
+      }
+    </style>
+    <div class="swiper-wrapper">
+      <!--Slide 1-->
+      <div class="swiper-slide">
+        <div class="relative w-full h-full flex items-end">
+          <!--Image-->
+          <img src="images/20260304141352942.webp" loading="eager" fetchpriority="high"
+            class="absolute inset-0 w-full h-full object-cover" alt="Slider" />
+          <div class="absolute inset-0 bg-black/10">
+          </div>
+          <div class="relative size-full site-container pt-navbar -top-[calc(var(--navbar-h)/2)]">
+            <!--Navigation-->
+            <button aria-label="Previous slide"
+              class="main-prev size-12 p-2.5 absolute left-[calc(var(--container-gap)-1rem)] top-1/2 z-20 hidden lg:flex justify-between items-center text-white border border-white/50 rounded-full cursor-pointer">
+              <i data-aether-icon="left-arrow" class="size-full">
+              </i>
+            </button>
+            <button aria-label="Next slide"
+              class="main-next size-12 p-2.5 absolute right-[calc(var(--container-gap)-1rem)] top-1/2 z-20 hidden lg:flex justify-between items-center text-white border border-white/50 rounded-full cursor-pointer">
+              <i data-aether-icon="right-arrow" class="size-full">
+              </i>
+            </button>
+            <!--Content-->
+            <div class="relative z-10 lg:px-14 h-full flex flex-col justify-center">
+              <div class="flex flex-col gap-2 justify-center h-full">
+                <p class="sm:text-xl uppercase font-light tracking-[0.5rem] sm:tracking-[1.5rem] text-white"
+                  data-swiper-parallax="-300">
+                  PLANTING SEEDS FOR A
+                </p>
+                <p class="text-5xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-bold uppercase text-white mb-1 sm:mb-4 text-shadow-xs"
+                  data-swiper-parallax="-200">
+                  STRONGER FUTURE
+                </p>
+                <a href="#" data-swiper-parallax="-100"
+                  class="border border-white text-white py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:border-[#E30613] hover:bg-[#E30613] active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    SEEDING
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </a>
+              </div>
+              <div class="flex items-center sm:justify-end gap-2 sm:gap-10">
+                <!--Advertorial Movie-->
+                <button data-swiper-parallax="-100" aria-label="Play advertorial movie"
+                  class="border border-white/10 text-white text-sm font-light backdrop-blur-xs bg-white/10 py-2 pl-2 pr-6 uppercase outline-none rounded-full shrink-0 whitespace-nowrap h-16 w-fit mt-2 flex items-center gap-2 transition-all duration-300 cursor-pointer active:scale-95">
+                  <span class="size-12 p-4 flex items-center justify-center border border-white/50 rounded-full">
+                    <i data-aether-icon="play" class="size-full text-white">
+                    </i>
+                  </span>
+                  ADVERTORIAL MOVIE
+                </button>
+                <!--Scroll Indicator-->
+                <span data-swiper-parallax="-100" class="hidden sm:flex gap-2 items-center">
+                  <p class="text-sm font-light tracking-[0.5rem] uppercase text-white">
+                    Scroll Down
+                  </p>
+                  <i data-aether-icon="mouse" class="size-10 text-white animate-bounce mt-1.5">
+                  </i>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Slide 2-->
+      <div class="swiper-slide">
+        <div class="relative w-full h-full flex items-end">
+          <!--Image-->
+          <img src="images/20260304141340346.webp" loading="eager" fetchpriority="high"
+            class="absolute inset-0 w-full h-full object-cover" alt="Slider" />
+          <div class="absolute inset-0 bg-black/10">
+          </div>
+          <div class="relative size-full site-container pt-navbar -top-[calc(var(--navbar-h)/2)]">
+            <!--Navigation-->
+            <button aria-label="Previous slide"
+              class="main-prev size-12 p-2.5 absolute left-[calc(var(--container-gap)-1rem)] top-1/2 z-20 hidden lg:flex justify-between items-center text-white border border-white/50 rounded-full cursor-pointer">
+              <i data-aether-icon="left-arrow" class="size-full">
+              </i>
+            </button>
+            <button aria-label="Next slide"
+              class="main-next size-12 p-2.5 absolute right-[calc(var(--container-gap)-1rem)] top-1/2 z-20 hidden lg:flex justify-between items-center text-white border border-white/50 rounded-full cursor-pointer">
+              <i data-aether-icon="right-arrow" class="size-full">
+              </i>
+            </button>
+            <!--Content-->
+            <div class="relative z-10 lg:px-14 h-full flex flex-col justify-center">
+              <div class="flex flex-col gap-2 justify-center h-full">
+                <p class="sm:text-xl uppercase font-light tracking-[0.5rem] sm:tracking-[1.5rem] text-white"
+                  data-swiper-parallax="-300">
+                  Effective protection for
+                </p>
+                <p class="text-5xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-bold uppercase text-white mb-1 sm:mb-4 text-shadow-xs"
+                  data-swiper-parallax="-200">
+                  healthier crops
+                </p>
+                <a href="#" data-swiper-parallax="-100"
+                  class="border border-white text-white py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:border-[#E30613] hover:bg-[#E30613] active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    FERTILIZATION
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </a>
+              </div>
+              <div class="flex items-center sm:justify-end gap-2 sm:gap-10">
+                <!--Advertorial Movie-->
+                <button data-swiper-parallax="-100" aria-label="Play advertorial movie"
+                  class="border border-white/10 text-white text-sm font-light backdrop-blur-xs bg-white/10 py-2 pl-2 pr-6 uppercase outline-none rounded-full shrink-0 whitespace-nowrap h-16 w-fit mt-2 flex items-center gap-2 transition-all duration-300 cursor-pointer active:scale-95">
+                  <span class="size-12 p-4 flex items-center justify-center border border-white/50 rounded-full">
+                    <i data-aether-icon="play" class="size-full text-white">
+                    </i>
+                  </span>
+                  ADVERTORIAL MOVIE
+                </button>
+                <!--Scroll Indicator-->
+                <span data-swiper-parallax="-100" class="hidden sm:flex gap-2 items-center">
+                  <p class="text-sm font-light tracking-[0.5rem] uppercase text-white">
+                    Scroll Down
+                  </p>
+                  <i data-aether-icon="mouse" class="size-10 text-white animate-bounce mt-1.5">
+                  </i>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Slide 3-->
+      <div class="swiper-slide">
+        <div class="relative w-full h-full flex items-end">
+          <!--Image-->
+          <img src="images/20260304141340714.webp" loading="eager" fetchpriority="high"
+            class="absolute inset-0 w-full h-full object-cover" alt="Slider" />
+          <div class="absolute inset-0 bg-black/10">
+          </div>
+          <div class="relative size-full site-container pt-navbar -top-[calc(var(--navbar-h)/2)]">
+            <!--Navigation-->
+            <button aria-label="Previous slide"
+              class="main-prev size-12 p-2.5 absolute left-[calc(var(--container-gap)-1rem)] top-1/2 z-20 hidden lg:flex justify-between items-center text-white border border-white/50 rounded-full cursor-pointer">
+              <i data-aether-icon="left-arrow" class="size-full">
+              </i>
+            </button>
+            <button aria-label="Next slide"
+              class="main-next size-12 p-2.5 absolute right-[calc(var(--container-gap)-1rem)] top-1/2 z-20 hidden lg:flex justify-between items-center text-white border border-white/50 rounded-full cursor-pointer">
+              <i data-aether-icon="right-arrow" class="size-full">
+              </i>
+            </button>
+            <!--Content-->
+            <div class="relative z-10 lg:px-14 h-full flex flex-col justify-center">
+              <div class="flex flex-col gap-2 justify-center h-full">
+                <p class="sm:text-xl uppercase font-light tracking-[0.5rem] sm:tracking-[1.5rem] text-white"
+                  data-swiper-parallax="-300">
+                  Stronger soil for
+                </p>
+                <p class="text-5xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-bold uppercase text-white mb-1 sm:mb-4 text-shadow-xs"
+                  data-swiper-parallax="-200">
+                  stronger growth
+                </p>
+                <a href="#" data-swiper-parallax="-100"
+                  class="border border-white text-white py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:border-[#E30613] hover:bg-[#E30613] active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    CULTIVATION
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </a>
+              </div>
+              <div class="flex items-center sm:justify-end gap-2 sm:gap-10">
+                <!--Advertorial Movie-->
+                <button data-swiper-parallax="-100" aria-label="Play advertorial movie"
+                  class="border border-white/10 text-white text-sm font-light backdrop-blur-xs bg-white/10 py-2 pl-2 pr-6 uppercase outline-none rounded-full shrink-0 whitespace-nowrap h-16 w-fit mt-2 flex items-center gap-2 transition-all duration-300 cursor-pointer active:scale-95">
+                  <span class="size-12 p-4 flex items-center justify-center border border-white/50 rounded-full">
+                    <i data-aether-icon="play" class="size-full text-white">
+                    </i>
+                  </span>
+                  ADVERTORIAL MOVIE
+                </button>
+                <!--Scroll Indicator-->
+                <span data-swiper-parallax="-100" class="hidden sm:flex gap-2 items-center">
+                  <p class="text-sm font-light tracking-[0.5rem] uppercase text-white">
+                    Scroll Down
+                  </p>
+                  <i data-aether-icon="mouse" class="size-10 text-white animate-bounce mt-1.5">
+                  </i>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="swiper-pagination absolute! sm:text-start! sm:left-container-gap! bottom-14! 2xl:text-center! 2xl:bottom-22! max-sm:text-end! max-sm:pr-5">
+    </div>
+  </section>
+  <div class="site-section-gap">
+  </div>
+  <!--Products-->
+  <section class="site-container">
+    <!--Header-->
+    <div class="lg:flex justify-between items-center gap-32 mb-5 sm:mb-10 max-sm:text-center">
+      <div>
+        <p class="text-[#E30613] mb-2">
+          SINCE 1962
+        </p>
+        <h2 class="text-4xl sm:text-5xl font-bold mb-5">
+          Agromaster
+        </h2>
+        <a href="products.html"
+          class="max-sm:mx-auto border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+          <span class="group-hover:-translate-x-4 transition-all duration-300">
+            PRODUCTS
+          </span>
+          <i data-aether-icon="right-arrow"
+            class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+          </i>
+        </a>
+      </div>
+      <p class="text-black/60 max-lg:mt-5 xl:max-w-xl 2xl:text-lg">
+        Agromaster optimizes its products to farmers’ needs, delivering
+        reliable and efficient solutions for sustainable agriculture.
+      </p>
+    </div>
+    <!--Products Slider-->
+    <div class="swiper swiperProducts w-full">
+      <div class="swiper-wrapper">
+        <!--Slide 1-->
+        <div class="swiper-slide h-auto! max-sm:w-[90%]!">
+          <a href="product-detail.html"
+            class="bg-[#F9F9F9] h-full flex flex-col rounded-3xl overflow-hidden shadow-xs transition-colors duration-300 group hover:bg-[#c4c4c4] relative p-3 sm:p-5">
+            <div class="flex items-center w-full justify-between px-2 sm:px-5 py-2 sm:py-5">
+              <h3
+                class="text-xl sm:text-2xl md:text-3xl font-bold transition-colors duration-300 text-black group-hover:text-white">
+                Cultivation
+              </h3>
+              <div
+                class="sm:opacity-0 group-hover:opacity-100 size-12 p-3 flex justify-between items-center border border-black/20 sm:border-white/50 text-black sm:text-white transition-all duration-300 rounded-full cursor-pointer">
+                <i data-aether-icon="right-arrow" class="size-full">
+                </i>
+              </div>
+            </div>
+            <img src="images/20260304141343445.webp" loading="lazy" alt="Product"
+              class="object-contain w-full aspect-square" />
+            <div
+              class="absolute bottom-0 inset-x-0 w-full h-3 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-all duration-300 bg-[#E30613]">
+            </div>
+          </a>
+        </div>
+        <!--Slide 2-->
+        <div class="swiper-slide h-auto! max-sm:w-[90%]!">
+          <a href="product-detail.html"
+            class="bg-[#F9F9F9] h-full flex flex-col rounded-3xl overflow-hidden shadow-xs transition-colors duration-300 group hover:bg-[#c4c4c4] relative p-3 sm:p-5">
+            <div class="flex items-center w-full justify-between px-2 sm:px-5 py-2 sm:py-5">
+              <h3
+                class="text-xl sm:text-2xl md:text-3xl font-bold transition-colors duration-300 text-black group-hover:text-white">
+                Seeding
+              </h3>
+              <div
+                class="sm:opacity-0 group-hover:opacity-100 size-12 p-3 flex justify-between items-center border border-black/20 sm:border-white/50 text-black sm:text-white transition-all duration-300 rounded-full cursor-pointer">
+                <i data-aether-icon="right-arrow" class="size-full">
+                </i>
+              </div>
+            </div>
+            <img src="images/20260304141341095.webp" loading="lazy" alt="Product"
+              class="object-contain w-full aspect-square" />
+            <div
+              class="absolute bottom-0 inset-x-0 w-full h-3 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-all duration-300 bg-[#E30613]">
+            </div>
+          </a>
+        </div>
+        <!--Slide 3-->
+        <div class="swiper-slide h-auto! max-sm:w-[90%]!">
+          <a href="product-detail.html"
+            class="bg-[#F9F9F9] h-full flex flex-col rounded-3xl overflow-hidden shadow-xs transition-colors duration-300 group hover:bg-[#c4c4c4] relative p-3 sm:p-5">
+            <div class="flex items-center w-full justify-between px-2 sm:px-5 py-2 sm:py-5">
+              <h3
+                class="text-xl sm:text-2xl md:text-3xl font-bold transition-colors duration-300 text-black group-hover:text-white">
+                Fertilization
+              </h3>
+              <div
+                class="sm:opacity-0 group-hover:opacity-100 size-12 p-3 flex justify-between items-center border border-black/20 sm:border-white/50 text-black sm:text-white transition-all duration-300 rounded-full cursor-pointer">
+                <i data-aether-icon="right-arrow" class="size-full">
+                </i>
+              </div>
+            </div>
+            <img src="images/20260304141349604.webp" loading="lazy" alt="Product"
+              class="object-contain w-full aspect-square" />
+            <div
+              class="absolute bottom-0 inset-x-0 w-full h-3 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-all duration-300 bg-[#E30613]">
+            </div>
+          </a>
+        </div>
+        <!--Slide 4-->
+        <div class="swiper-slide h-auto! max-sm:w-[90%]!">
+          <a href="product-detail.html"
+            class="bg-[#F9F9F9] h-full flex flex-col rounded-3xl overflow-hidden shadow-xs transition-colors duration-300 group hover:bg-[#c4c4c4] relative p-3 sm:p-5">
+            <div class="flex items-center w-full justify-between px-2 sm:px-5 py-2 sm:py-5">
+              <h3
+                class="text-xl sm:text-2xl md:text-3xl font-bold transition-colors duration-300 text-black group-hover:text-white">
+                Crop Protection
+              </h3>
+              <div
+                class="sm:opacity-0 group-hover:opacity-100 size-12 p-3 flex justify-between items-center border border-black/20 sm:border-white/50 text-black sm:text-white transition-all duration-300 rounded-full cursor-pointer">
+                <i data-aether-icon="right-arrow" class="size-full">
+                </i>
+              </div>
+            </div>
+            <img src="images/20260304141344871.webp" loading="lazy" alt="Product"
+              class="object-contain w-full aspect-square" />
+            <div
+              class="absolute bottom-0 inset-x-0 w-full h-3 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-all duration-300 bg-[#E30613]">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="site-section-gap">
+  </div>
+  <!--Video-->
+  <section class="site-container max-sm:hidden">
+    <video class="w-full max-h-[900px] rounded-3xl object-cover bg-black" autoplay loop muted playsinline>
+      <source src="videos/20260304162059164.webm" type="video/webm" />
+    </video>
+  </section>
+  <!--Video (mobile)-->
+  <section class="sm:hidden">
+    <video class="w-full max-h-[900px] object-cover bg-black" autoplay loop muted playsinline>
+      <source src="videos/20260304162059164.webm" type="video/webm" />
+    </video>
+  </section>
+  <div class="site-section-gap">
+  </div>
+  <!--Intro-->
+  <section class="site-container">
+    <div class="w-full bg-[#F9F9F9] rounded-3xl p-6 sm:p-12 xl:p-24 relative">
+      <div class="flex items-center justify-between gap-12 w-full mb-3 md:mb-7">
+        <p class="text-[#E30613] shrink-0">
+          SINCE 1962
+        </p>
+        <div class="flex-1 h-px bg-[#E30613] w-full max-md:hidden">
+        </div>
+      </div>
+      <div class="xl:flex w-full justify-between gap-5 sm:gap-16 2xl:gap-48">
+        <h2 class="text-4xl sm:text-5xl md:text-7xl 2xl:text-8xl shrink-0 max-xl:mb-4">
+          <span class="font-light">
+            WE KNOWS
+          </span>
+          <br />
+          <span class="font-bold flex items-center gap-2">
+            THE SOILS
+            <svg class="text-[#E30613] w-[40px] sm:w-[80px] h-[32px] sm:h-[64px]" viewBox="0 0 80 64" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path
+                d="M79.8748 2.04229C79.8451 1.54374 79.6344 1.07343 79.2828 0.720273C78.9311 0.367115 78.4628 0.155587 77.9663 0.125684C60.6778 -0.895597 46.8199 4.35379 40.8978 14.1717C36.9553 20.7113 37.0401 28.7011 41.0774 36.2995C38.4888 39.2755 36.6846 42.8559 35.8299 46.7131L29.1179 39.9693C31.8806 34.4884 31.8637 28.7522 29.0094 24.0203C24.6669 16.8202 14.5752 12.9598 1.99868 13.7087C1.50169 13.7387 1.03292 13.9507 0.68117 14.3046C0.329425 14.6584 0.119144 15.1296 0.0901667 15.6287C-0.648831 28.2552 3.18854 38.3897 10.3582 42.7505C12.6932 44.1837 15.3776 44.9402 18.1143 44.9361C20.9484 44.9071 23.7357 44.2073 26.25 42.8935L35.2536 51.908V61.9574C35.2536 62.4992 35.4679 63.0187 35.8493 63.4017C36.2308 63.7848 36.7481 64 37.2875 64C37.827 64 38.3443 63.7848 38.7257 63.4017C39.1072 63.0187 39.3215 62.4992 39.3215 61.9574V51.9182C39.3079 47.2389 40.9625 42.7093 43.986 39.1488C47.786 41.1676 51.6878 42.182 55.4506 42.182C59.131 42.1942 62.7432 41.1845 65.8881 39.2646C75.6646 33.3241 80.8918 19.4041 79.8748 2.04229ZM12.4667 39.2544C6.93776 35.8943 3.85973 27.9147 4.06652 17.7019C14.2362 17.4807 22.172 20.5751 25.5178 26.1275C27.4433 29.3173 27.606 33.0654 26.0398 36.8816L17.0295 27.8296C16.6478 27.4464 16.1302 27.231 15.5905 27.231C15.0507 27.231 14.5331 27.4464 14.1515 27.8296C13.7698 28.2129 13.5554 28.7327 13.5554 29.2747C13.5554 29.8168 13.7698 30.3366 14.1515 30.7199L23.1754 39.7786C19.3753 41.3514 15.643 41.1914 12.4667 39.2544ZM63.783 35.7752C58.7863 38.8118 52.8879 38.9003 46.9454 36.0816L65.8474 17.1028C66.0364 16.913 66.1863 16.6877 66.2886 16.4398C66.3909 16.1918 66.4435 15.926 66.4435 15.6577C66.4435 15.3893 66.3909 15.1235 66.2886 14.8756C66.1863 14.6276 66.0364 14.4023 65.8474 14.2126C65.6585 14.0228 65.4341 13.8722 65.1872 13.7695C64.9403 13.6668 64.6757 13.614 64.4084 13.614C64.1412 13.614 63.8765 13.6668 63.6296 13.7695C63.3827 13.8722 63.1584 14.0228 62.9694 14.2126L44.0673 33.1948C41.2605 27.2271 41.3554 21.3036 44.3724 16.2892C49.2946 8.11891 61.0033 3.63208 75.8985 4.11889C76.3832 19.0636 71.912 30.8288 63.783 35.7752Z" />
+            </svg>
+          </span>
+        </h2>
+        <div class="flex-1">
+          <p class="text-black/60 lg:text-lg mb-2 sm:mb-5">
+            Agromaster is moving forward with confident steps toward becoming
+            a global brand, operating 47,000 machines across 67 countries
+            worldwide. Since 1962, with its strong corporate heritage and
+            third-generation management, the company has closely followed
+            global agricultural innovations, shaping both today and the future
+            with a unified vision.
+          </p>
+          <a href="company.html"
+            class="border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+            <span class="group-hover:-translate-x-4 transition-all duration-300">
+              COMPANY
+            </span>
+            <i data-aether-icon="right-arrow"
+              class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+            </i>
+          </a>
+        </div>
+      </div>
+      <svg class="absolute right-10 bottom-10 animate-ping" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+        viewBox="0 0 26 26" fill="none">
+        <circle cx="13" cy="13" r="12.5" stroke="#E30613" />
+        <circle cx="13" cy="13" r="6" fill="#E30613" />
+      </svg>
+    </div>
+  </section>
+  <div class="site-section-gap">
+  </div>
+  <!--Counters-->
+  <section class="site-container">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-12 md:gap-24 xl:gap-36 2xl:gap-48 w-full justify-around">
+      <!--Counter 1-->
+      <div
+        class="relative pb-6 flex flex-col gap-2 justify-end w-full border-b border-[#E30613]/20 sm:border-[#E30613] items-center text-center sm:items-end sm:text-end">
+        <svg class="size-6 sm:size-8 text-[#E30613] mb-2" xmlns="http://www.w3.org/2000/svg" width="14" height="20"
+          viewBox="0 0 14 20" fill="none">
+          <path
+            d="M13.125 4.65375V1.3125C13.125 0.964403 12.9867 0.630564 12.7406 0.384422C12.4944 0.138281 12.1606 0 11.8125 0H1.3125C0.964403 0 0.630564 0.138281 0.384422 0.384422C0.138281 0.630564 0 0.964403 0 1.3125V4.6875C0.000434369 4.89118 0.0480654 5.09199 0.139155 5.27417C0.230245 5.45635 0.362315 5.61494 0.525 5.7375L5.625 9.5625L0.525 13.3875C0.362315 13.5101 0.230245 13.6686 0.139155 13.8508C0.0480654 14.033 0.000434369 14.2338 0 14.4375V17.8125C0 18.1606 0.138281 18.4944 0.384422 18.7406C0.630564 18.9867 0.964403 19.125 1.3125 19.125H11.8125C12.1606 19.125 12.4944 18.9867 12.7406 18.7406C12.9867 18.4944 13.125 18.1606 13.125 17.8125V14.4713C13.1244 14.2684 13.0771 14.0684 12.9867 13.8868C12.8963 13.7052 12.7653 13.5468 12.6038 13.4241L7.5 9.5625L12.6084 5.70094C12.7691 5.5777 12.8992 5.41915 12.9888 5.23757C13.0784 5.05598 13.125 4.85623 13.125 4.65375ZM12 14.4713V17.8125C12 17.8622 11.9802 17.9099 11.9451 17.9451C11.9099 17.9802 11.8622 18 11.8125 18H1.3125C1.26277 18 1.21508 17.9802 1.17992 17.9451C1.14475 17.9099 1.125 17.8622 1.125 17.8125V14.4375C1.125 14.4084 1.13178 14.3797 1.14479 14.3536C1.15781 14.3276 1.17671 14.305 1.2 14.2875L6.5625 10.2666L11.9269 14.3212C11.9498 14.3389 11.9684 14.3616 11.981 14.3877C11.9937 14.4137 12.0002 14.4423 12 14.4713ZM12 4.65375C12.0001 4.68278 11.9935 4.71144 11.9806 4.73747C11.9678 4.7635 11.9491 4.78619 11.9259 4.80375L6.5625 8.85844L1.2 4.8375C1.17671 4.82003 1.15781 4.79739 1.14479 4.77135C1.13178 4.74532 1.125 4.71661 1.125 4.6875V1.3125C1.125 1.26277 1.14475 1.21508 1.17992 1.17992C1.21508 1.14475 1.26277 1.125 1.3125 1.125H11.8125C11.8622 1.125 11.9099 1.14475 11.9451 1.17992C11.9802 1.21508 12 1.26277 12 1.3125V4.65375Z"
+            fill="#E30613" />
+        </svg>
+        <p class="text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl leading-none font-light">
+          +
+          <span class="counter-value" data-target="65">
+            0
+          </span>
+        </p>
+        <p class="sm:text-lg md:text-xl">
+          YEARS OF
+          <br />
+          EXPERIENCE
+        </p>
+      </div>
+      <!--Counter 2-->
+      <div
+        class="relative pb-6 flex flex-col gap-2 justify-end w-full border-b border-[#E30613]/20 sm:border-[#E30613] items-center text-center sm:items-end sm:text-end">
+        <svg class="size-6 sm:size-8 text-[#E30613] mb-2" xmlns="http://www.w3.org/2000/svg" width="22" height="17"
+          viewBox="0 0 22 17" fill="none">
+          <path
+            d="M20.625 11.6363V8.625C20.6262 8.34212 20.5355 8.06651 20.3664 7.83973C20.1972 7.61296 19.959 7.44733 19.6875 7.36781H19.6734L16.125 6.3975V2.8125C16.125 2.66332 16.0657 2.52024 15.9603 2.41475C15.8548 2.30926 15.7117 2.25 15.5625 2.25C15.4133 2.25 15.2702 2.30926 15.1648 2.41475C15.0593 2.52024 15 2.66332 15 2.8125V6.09375L12.375 5.38313V1.125H13.3125C13.4617 1.125 13.6048 1.06574 13.7103 0.960248C13.8157 0.854759 13.875 0.711684 13.875 0.5625C13.875 0.413316 13.8157 0.270242 13.7103 0.164752C13.6048 0.0592632 13.4617 0 13.3125 0H2.0625C1.91332 0 1.77024 0.0592632 1.66475 0.164752C1.55927 0.270242 1.5 0.413316 1.5 0.5625C1.5 0.711684 1.55927 0.854759 1.66475 0.960248C1.77024 1.06574 1.91332 1.125 2.0625 1.125H3V4.5H2.0625C1.91332 4.5 1.77024 4.55926 1.66475 4.66475C1.55927 4.77024 1.5 4.91332 1.5 5.0625C1.5 5.21168 1.55927 5.35476 1.66475 5.46025C1.77024 5.56574 1.91332 5.625 2.0625 5.625H4.6875C6.42738 5.62699 8.09542 6.31903 9.3257 7.5493C10.556 8.77958 11.248 10.4476 11.25 12.1875V13.3125C11.25 13.4617 11.3093 13.6048 11.4148 13.7102C11.5202 13.8157 11.6633 13.875 11.8125 13.875H15.0056C15.0348 14.3791 15.1834 14.869 15.439 15.3044C15.6947 15.7398 16.0501 16.1083 16.4761 16.3794C16.902 16.6506 17.3863 16.8167 17.889 16.864C18.3917 16.9113 18.8984 16.8386 19.3675 16.6517C19.8366 16.4648 20.2545 16.1692 20.587 15.7891C20.9194 15.4091 21.1568 14.9555 21.2796 14.4657C21.4024 13.976 21.4071 13.464 21.2933 12.9721C21.1795 12.4802 20.9504 12.0223 20.625 11.6363ZM4.6875 4.5H4.125V1.125H11.25V8.18813C10.5642 7.06227 9.60032 6.13171 8.45108 5.48583C7.30183 4.83996 6.0058 4.50047 4.6875 4.5ZM12.375 12.1875V6.5475L19.3716 8.44219C19.4098 8.45485 19.4429 8.47945 19.466 8.51237C19.4891 8.54529 19.501 8.58478 19.5 8.625V10.7813C19.0876 10.5949 18.6403 10.4986 18.1879 10.4985C17.7354 10.4985 17.288 10.5948 16.8757 10.781C16.4633 10.9673 16.0953 11.2392 15.7961 11.5787C15.497 11.9182 15.2735 12.3175 15.1406 12.75H12.375V12.1875ZM18.1875 15.75C17.7796 15.75 17.3808 15.629 17.0416 15.4024C16.7025 15.1758 16.4381 14.8537 16.282 14.4768C16.1259 14.0999 16.0851 13.6852 16.1646 13.2851C16.2442 12.885 16.4406 12.5175 16.7291 12.2291C17.0175 11.9406 17.385 11.7442 17.7851 11.6646C18.1852 11.585 18.5999 11.6259 18.9768 11.782C19.3537 11.9381 19.6758 12.2025 19.9024 12.5416C20.129 12.8808 20.25 13.2796 20.25 13.6875C20.25 14.2345 20.0327 14.7591 19.6459 15.1459C19.2591 15.5327 18.7345 15.75 18.1875 15.75ZM4.6875 7.5C3.7604 7.5 2.85412 7.77492 2.08327 8.28999C1.31241 8.80506 0.711603 9.53714 0.356817 10.3937C0.00203101 11.2502 -0.0907971 12.1927 0.0900711 13.102C0.270939 14.0113 0.71738 14.8465 1.37294 15.5021C2.0285 16.1576 2.86373 16.6041 3.77302 16.7849C4.6823 16.9658 5.6248 16.873 6.48133 16.5182C7.33786 16.1634 8.06995 15.5626 8.58502 14.7917C9.10009 14.0209 9.375 13.1146 9.375 12.1875C9.37351 10.9448 8.87918 9.75334 8.00042 8.87458C7.12167 7.99583 5.93025 7.50149 4.6875 7.5ZM4.6875 15.75C3.98291 15.75 3.29413 15.5411 2.70828 15.1496C2.12243 14.7582 1.66582 14.2018 1.39618 13.5508C1.12654 12.8998 1.05599 12.1835 1.19345 11.4925C1.33091 10.8014 1.67021 10.1667 2.16843 9.66843C2.66666 9.17021 3.30144 8.83091 3.99249 8.69345C4.68355 8.55599 5.39985 8.62654 6.05081 8.89618C6.70177 9.16582 7.25816 9.62243 7.64961 10.2083C8.04107 10.7941 8.25 11.4829 8.25 12.1875C8.25 13.1323 7.87467 14.0385 7.20657 14.7066C6.53847 15.3747 5.63234 15.75 4.6875 15.75ZM5.625 12.1875C5.625 12.3729 5.57002 12.5542 5.467 12.7083C5.36399 12.8625 5.21757 12.9827 5.04627 13.0536C4.87496 13.1246 4.68646 13.1432 4.5046 13.107C4.32275 13.0708 4.1557 12.9815 4.02459 12.8504C3.89348 12.7193 3.80419 12.5523 3.76802 12.3704C3.73184 12.1885 3.75041 12 3.82136 11.8287C3.89232 11.6574 4.01248 11.511 4.16666 11.408C4.32083 11.305 4.50208 11.25 4.6875 11.25C4.93614 11.25 5.1746 11.3488 5.35041 11.5246C5.52623 11.7004 5.625 11.9389 5.625 12.1875Z"
+            fill="#E30613" />
+        </svg>
+        <p class="text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl leading-none font-light">
+          +
+          <span class="counter-value" data-target="81">
+            0
+          </span>
+        </p>
+        <p class="sm:text-lg md:text-xl">
+          PRODUCT
+          <br />
+          VARIETIES
+        </p>
+      </div>
+      <!--Counter 3-->
+      <div
+        class="relative pb-6 flex flex-col gap-2 justify-end w-full border-b border-[#E30613]/20 sm:border-[#E30613] items-center text-center sm:items-end sm:text-end">
+        <svg class="size-6 sm:size-8 text-[#E30613] mb-2" xmlns="http://www.w3.org/2000/svg" width="23" height="17"
+          viewBox="0 0 23 17" fill="none">
+          <path
+            d="M21.9 9.26693C21.8409 9.31125 21.7737 9.3435 21.7021 9.36183C21.6305 9.38017 21.5561 9.38422 21.483 9.37378C21.4098 9.36333 21.3395 9.33858 21.2759 9.30095C21.2123 9.26331 21.1568 9.21353 21.1125 9.15443C20.6431 8.52341 20.0321 8.01142 19.3286 7.6597C18.6252 7.30798 17.849 7.12635 17.0625 7.12943C16.9133 7.12943 16.7702 7.07017 16.6648 6.96468C16.5593 6.85919 16.5 6.71612 16.5 6.56693C16.5 6.41775 16.5593 6.27467 16.6648 6.16918C16.7702 6.0637 16.9133 6.00443 17.0625 6.00443C17.5184 6.00433 17.9651 5.8764 18.3519 5.63515C18.7387 5.39391 19.0501 5.04902 19.2507 4.63967C19.4514 4.23032 19.5332 3.77291 19.4869 3.31939C19.4406 2.86588 19.268 2.43444 18.9888 2.07407C18.7096 1.7137 18.335 1.43885 17.9074 1.28074C17.4798 1.12262 17.0165 1.08759 16.57 1.1796C16.1235 1.27162 15.7117 1.487 15.3815 1.80129C15.0513 2.11557 14.8158 2.51616 14.7019 2.95756C14.6646 3.10202 14.5714 3.22574 14.4429 3.30152C14.3144 3.3773 14.161 3.39892 14.0166 3.36162C13.8721 3.32432 13.7484 3.23117 13.6726 3.10265C13.5968 2.97413 13.5752 2.82077 13.6125 2.67631C13.7539 2.1264 14.0247 1.61825 14.4023 1.19422C14.7799 0.770187 15.2534 0.442555 15.7833 0.238631C16.3132 0.0347063 16.8842 -0.0396025 17.4486 0.0218975C18.0131 0.0833974 18.5547 0.278925 19.0282 0.592182C19.5018 0.90544 19.8936 1.32735 20.1711 1.82275C20.4485 2.31816 20.6035 2.87269 20.6231 3.44015C20.6428 4.0076 20.5265 4.57154 20.284 5.08494C20.0415 5.59835 19.6798 6.04635 19.2291 6.39162C20.3383 6.80554 21.3047 7.53041 22.0125 8.47943C22.0568 8.53853 22.0891 8.60577 22.1074 8.67733C22.1257 8.74889 22.1298 8.82335 22.1193 8.89648C22.1089 8.96961 22.0842 9.03996 22.0465 9.10352C22.0089 9.16708 21.9591 9.22261 21.9 9.26693ZM16.7991 15.2857C16.8361 15.3496 16.8601 15.4203 16.8698 15.4935C16.8796 15.5668 16.8747 15.6412 16.8557 15.7126C16.8366 15.784 16.8037 15.8509 16.7587 15.9096C16.7138 15.9682 16.6577 16.0174 16.5938 16.0544C16.5085 16.1044 16.4114 16.1306 16.3125 16.1304C16.2137 16.1304 16.1166 16.1045 16.031 16.0551C15.9455 16.0057 15.8744 15.9347 15.825 15.8491C15.3361 15.0207 14.6395 14.3341 13.8042 13.8572C12.9688 13.3802 12.0235 13.1293 11.0616 13.1293C10.0996 13.1293 9.15432 13.3802 8.31896 13.8572C7.4836 14.3341 6.78707 15.0207 6.29813 15.8491C6.26296 15.9163 6.21456 15.9758 6.15584 16.0238C6.09712 16.0718 6.02929 16.1075 5.95643 16.1286C5.88357 16.1497 5.80719 16.1559 5.73187 16.1468C5.65656 16.1376 5.58388 16.1133 5.5182 16.0754C5.45252 16.0374 5.3952 15.9866 5.34969 15.9259C5.30417 15.8652 5.2714 15.7959 5.25335 15.7222C5.2353 15.6485 5.23235 15.572 5.24466 15.4971C5.25697 15.4222 5.2843 15.3506 5.325 15.2866C6.09116 13.9702 7.29077 12.9608 8.71875 12.431C7.93871 11.9245 7.3433 11.1795 7.02134 10.3069C6.69937 9.43438 6.66812 8.48114 6.93222 7.58939C7.19633 6.69763 7.74165 5.91515 8.48684 5.35867C9.23202 4.80219 10.1371 4.50152 11.0672 4.50152C11.9972 4.50152 12.9024 4.80219 13.6475 5.35867C14.3927 5.91515 14.938 6.69763 15.2022 7.58939C15.4663 8.48114 15.435 9.43438 15.113 10.3069C14.7911 11.1795 14.1957 11.9245 13.4156 12.431C14.8396 12.9626 16.0353 13.9715 16.7991 15.2857ZM11.0625 12.0044C11.6929 12.0044 12.3092 11.8175 12.8334 11.4672C13.3576 11.117 13.7661 10.6192 14.0074 10.0367C14.2486 9.4543 14.3117 8.8134 14.1888 8.19508C14.0658 7.57677 13.7622 7.00881 13.3164 6.56303C12.8706 6.11725 12.3027 5.81367 11.6844 5.69068C11.066 5.56769 10.4251 5.63081 9.8427 5.87207C9.26026 6.11332 8.76244 6.52187 8.41219 7.04605C8.06194 7.57023 7.875 8.1865 7.875 8.81693C7.875 9.66231 8.21082 10.4731 8.8086 11.0708C9.40637 11.6686 10.2171 12.0044 11.0625 12.0044ZM5.625 6.56693C5.625 6.41775 5.56574 6.27467 5.46025 6.16918C5.35476 6.0637 5.21168 6.00443 5.0625 6.00443C4.60668 6.00429 4.16003 5.87634 3.77328 5.6351C3.38652 5.39387 3.07516 5.04902 2.87454 4.63972C2.67393 4.23042 2.5921 3.77307 2.63835 3.31961C2.6846 2.86614 2.85708 2.43472 3.13619 2.07435C3.41531 1.71398 3.78988 1.4391 4.21738 1.28091C4.64487 1.12273 5.10815 1.08758 5.55462 1.17947C6.00108 1.27135 6.41284 1.48658 6.74312 1.80072C7.07341 2.11486 7.30899 2.51532 7.42313 2.95662C7.44159 3.02815 7.47397 3.09534 7.5184 3.15436C7.56284 3.21338 7.61846 3.26306 7.6821 3.30058C7.74573 3.3381 7.81614 3.36272 7.88929 3.37303C7.96244 3.38335 8.03691 3.37915 8.10844 3.36068C8.17997 3.34222 8.24716 3.30984 8.30618 3.26541C8.36519 3.22097 8.41488 3.16535 8.4524 3.10171C8.48992 3.03807 8.51454 2.96767 8.52485 2.89452C8.53516 2.82136 8.53097 2.7469 8.5125 2.67537C8.37111 2.12546 8.10032 1.61731 7.72271 1.19328C7.34511 0.76925 6.87161 0.441618 6.3417 0.237693C5.81179 0.0337689 5.24081 -0.0405402 4.67636 0.0209598C4.1119 0.0824597 3.57032 0.277987 3.09676 0.591245C2.6232 0.904502 2.23137 1.32642 1.95394 1.82182C1.67651 2.31722 1.52151 2.87176 1.50186 3.43921C1.48221 4.00667 1.59848 4.5706 1.84098 5.08401C2.08348 5.59741 2.44518 6.04542 2.89594 6.39068C1.78661 6.80486 0.820209 7.53007 0.1125 8.47943C0.0681789 8.53853 0.0359313 8.60577 0.0175986 8.67733C-0.000734213 8.74889 -0.00479316 8.82335 0.00565343 8.89648C0.0161 8.96961 0.0408476 9.03996 0.0784832 9.10352C0.116119 9.16708 0.165905 9.22261 0.225 9.26693C0.284095 9.31125 0.351341 9.3435 0.422898 9.36183C0.494456 9.38017 0.568923 9.38422 0.64205 9.37378C0.715176 9.36333 0.785528 9.33858 0.84909 9.30095C0.912652 9.26331 0.968179 9.21353 1.0125 9.15443C1.48191 8.52341 2.09294 8.01142 2.79638 7.6597C3.49983 7.30798 4.27603 7.12635 5.0625 7.12943C5.21168 7.12943 5.35476 7.07017 5.46025 6.96468C5.56574 6.85919 5.625 6.71612 5.625 6.56693Z"
+            fill="#E30613" />
+        </svg>
+        <p class="text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl leading-none font-light">
+          +
+          <span class="counter-value" data-target="72">
+            0
+          </span>
+        </p>
+        <p class="sm:text-lg md:text-xl">
+          SATISFIED
+          <br />
+          CUSTOMERS
+        </p>
+      </div>
+      <!--Counter 4-->
+      <div
+        class="relative pb-6 flex flex-col gap-2 justify-end w-full border-b border-[#E30613]/20 sm:border-[#E30613] items-center text-center sm:items-end sm:text-end">
+        <svg class="size-6 sm:size-8 text-[#E30613] mb-2" xmlns="http://www.w3.org/2000/svg" width="21" height="20"
+          viewBox="0 0 21 20" fill="none">
+          <path
+            d="M9 14.8106C9 14.9598 8.94074 15.1029 8.83525 15.2084C8.72976 15.3139 8.58668 15.3731 8.4375 15.3731H5.8125C5.66332 15.3731 5.52024 15.3139 5.41475 15.2084C5.30926 15.1029 5.25 14.9598 5.25 14.8106C5.25 14.6614 5.30926 14.5184 5.41475 14.4129C5.52024 14.3074 5.66332 14.2481 5.8125 14.2481H8.4375C8.58668 14.2481 8.72976 14.3074 8.83525 14.4129C8.94074 14.5184 9 14.6614 9 14.8106ZM14.8125 14.2481H12.1875C12.0383 14.2481 11.8952 14.3074 11.7898 14.4129C11.6843 14.5184 11.625 14.6614 11.625 14.8106C11.625 14.9598 11.6843 15.1029 11.7898 15.2084C11.8952 15.3139 12.0383 15.3731 12.1875 15.3731H14.8125C14.9617 15.3731 15.1048 15.3139 15.2102 15.2084C15.3157 15.1029 15.375 14.9598 15.375 14.8106C15.375 14.6614 15.3157 14.5184 15.2102 14.4129C15.1048 14.3074 14.9617 14.2481 14.8125 14.2481ZM20.625 18.5606C20.625 18.7098 20.5657 18.8529 20.4602 18.9584C20.3548 19.0639 20.2117 19.1231 20.0625 19.1231H0.5625C0.413316 19.1231 0.270242 19.0639 0.164752 18.9584C0.0592632 18.8529 0 18.7098 0 18.5606C0 18.4114 0.0592632 18.2684 0.164752 18.1629C0.270242 18.0574 0.413316 17.9981 0.5625 17.9981H1.5V6.56062C1.5 6.45616 1.52909 6.35376 1.58401 6.2649C1.63893 6.17604 1.71751 6.10423 1.81094 6.05751C1.90438 6.01079 2.00897 5.99102 2.11302 6.0004C2.21706 6.00978 2.31643 6.04795 2.4 6.11062L7.5 9.93563V6.56062C7.5 6.45616 7.52909 6.35376 7.58401 6.2649C7.63893 6.17604 7.71751 6.10423 7.81094 6.05751C7.90438 6.01079 8.00898 5.99102 8.11302 6.0004C8.21706 6.00978 8.31643 6.04795 8.4 6.11062L12.2812 9.02437L13.4062 1.125C13.4526 0.813136 13.6092 0.528202 13.8476 0.321823C14.0859 0.115445 14.3903 0.00127537 14.7056 0H16.4044C16.7197 0.00127537 17.0241 0.115445 17.2624 0.321823C17.5008 0.528202 17.6574 0.813136 17.7038 1.125L19.11 10.9809C19.11 10.9809 19.1156 11.0362 19.1156 11.0606V17.9981H20.0531C20.1278 17.9969 20.2019 18.0105 20.2713 18.0382C20.3406 18.0659 20.4037 18.1072 20.4569 18.1595C20.5102 18.2119 20.5525 18.2743 20.5813 18.3432C20.6102 18.412 20.625 18.486 20.625 18.5606ZM13.3125 9.79406L14.25 10.4981H17.9137L16.5938 1.28437C16.5874 1.23932 16.5648 1.19812 16.5304 1.16846C16.4959 1.13879 16.4517 1.12268 16.4062 1.12312H14.7131C14.6676 1.12268 14.6235 1.13879 14.589 1.16846C14.5545 1.19812 14.532 1.23932 14.5256 1.28437L13.3125 9.79406ZM2.625 17.9981H18V11.6231H14.0625C13.9408 11.6231 13.8224 11.5836 13.725 11.5106L12.375 10.4981L8.625 7.68562V11.0606C8.625 11.1651 8.59591 11.2675 8.54099 11.3563C8.48607 11.4452 8.40749 11.517 8.31406 11.5637C8.22062 11.6105 8.11602 11.6302 8.01198 11.6209C7.90794 11.6115 7.80857 11.5733 7.725 11.5106L2.625 7.68562V17.9981Z"
+            fill="#E30613" />
+        </svg>
+        <p class="text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl leading-none font-light">
+          +
+          <span class="counter-value" data-target="59">
+            0
+          </span>
+        </p>
+        <p class="sm:text-lg md:text-xl">
+          m² MANUFACTURING
+          <br />
+          AREA
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="site-section-gap">
+  </div>
+  <!--News-->
+  <section class="site-container">
+    <!--Header-->
+    <div class="lg:flex justify-between items-end gap-32 mb-5 max-sm:text-center">
+      <div>
+        <p class="text-[#E30613] mb-2">
+          AGROMASTER
+        </p>
+        <h2 class="text-4xl sm:text-5xl mb-5">
+          Latest
+          <span class="font-bold">
+            News
+          </span>
+        </h2>
+      </div>
+      <div class="flex items-center gap-2.5 max-sm:hidden">
+        <button aria-label="Previous news"
+          class="news-prev size-12 sm:size-14 p-3 sm:p-4 flex justify-between items-center border border-black/20 text-black/80 transition-all duration-300 rounded-full cursor-pointer active:scale-95 aria-disabled:opacity-50">
+          <i data-aether-icon="left-arrow" class="size-full">
+          </i>
+        </button>
+        <button aria-label="Next news"
+          class="news-next size-12 sm:size-14 p-3 sm:p-4 flex justify-between items-center border border-black/20 text-black/80 transition-all duration-300 rounded-full cursor-pointer active:scale-95 aria-disabled:opacity-50">
+          <i data-aether-icon="right-arrow" class="size-full">
+          </i>
+        </button>
+      </div>
+    </div>
+    <div class="swiper swiperNews">
+      <style>
+        .swiperNews .swiper-slide {
+          height: auto !important;
+          width: 85% !important;
+        }
+
+        @media (min-width: 640px) {
+          .swiperNews .swiper-slide {
+            width: 70% !important;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .swiperNews .swiper-slide {
+            width: calc(40% - 10px) !important;
+          }
+
+          .swiperNews .swiper-slide:first-child {
+            width: calc(60% - 10px) !important;
+          }
+        }
+
+        @media (min-width: 1536px) {
+          .swiperNews .swiper-slide {
+            width: calc(25% - 18px) !important;
+          }
+
+          .swiperNews .swiper-slide:first-child {
+            width: calc(50% - 12px) !important;
+          }
+        }
+
+        @media (min-width: 768px) {
+          .swiperNews .swiper-slide:first-child h3 {
+            font-size: 1.875rem !important;
+            line-height: 2.25rem !important;
+          }
+        }
+      </style>
+      <div class="swiper-wrapper">
+        <!--Slide 1 (large)-->
+        <div class="swiper-slide">
+          <div class="bg-[#F9F9F9] rounded-2xl p-4 flex flex-col h-full">
+            <div class="w-full h-64 md:h-80 bg-gray-300 rounded-xl mb-6 overflow-hidden">
+              <img src="images/20260304141352555.webp" alt="news" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex-grow flex flex-col">
+              <p class="text-red-600 font-normal mb-2">
+                APRIL 2026
+              </p>
+              <h3 class="text-lg md:text-xl 2xl:text-2xl font-bold text-gray-900 mb-3 line-clamp-2">
+                News head number one
+              </h3>
+              <div class="mt-auto">
+                <a href="news-detail.html"
+                  class="border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    READ MORE
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Slide 2-->
+        <div class="swiper-slide">
+          <div class="bg-[#F9F9F9] rounded-2xl p-4 flex flex-col h-full">
+            <div class="w-full h-64 md:h-80 bg-gray-300 rounded-xl mb-6 overflow-hidden">
+              <img src="images/20260304141352555.webp" alt="news" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex-grow flex flex-col">
+              <p class="text-red-600 font-normal mb-2">
+                APRIL 2026
+              </p>
+              <h3 class="text-lg md:text-xl 2xl:text-2xl font-bold text-gray-900 mb-3 line-clamp-2">
+                News head number two
+              </h3>
+              <div class="mt-auto">
+                <a href="news-detail.html"
+                  class="border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    READ MORE
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Slide 3-->
+        <div class="swiper-slide">
+          <div class="bg-[#F9F9F9] rounded-2xl p-4 flex flex-col h-full">
+            <div class="w-full h-64 md:h-80 bg-gray-300 rounded-xl mb-6 overflow-hidden">
+              <img src="images/20260304141352555.webp" alt="news" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex-grow flex flex-col">
+              <p class="text-red-600 font-normal mb-2">
+                APRIL 2026
+              </p>
+              <h3 class="text-lg md:text-xl 2xl:text-2xl font-bold text-gray-900 mb-3 line-clamp-2">
+                News head number three
+              </h3>
+              <div class="mt-auto">
+                <a href="news-detail.html"
+                  class="border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    READ MORE
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Slide 4-->
+        <div class="swiper-slide">
+          <div class="bg-[#F9F9F9] rounded-2xl p-4 flex flex-col h-full">
+            <div class="w-full h-64 md:h-80 bg-gray-300 rounded-xl mb-6 overflow-hidden">
+              <img src="images/20260304141352555.webp" alt="news" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex-grow flex flex-col">
+              <p class="text-red-600 font-normal mb-2">
+                APRIL 2026
+              </p>
+              <h3 class="text-lg md:text-xl 2xl:text-2xl font-bold text-gray-900 mb-3 line-clamp-2">
+                News head number four
+              </h3>
+              <div class="mt-auto">
+                <a href="news-detail.html"
+                  class="border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    READ MORE
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Slide 5  -->
+        <div class="swiper-slide">
+          <div class="bg-[#F9F9F9] rounded-2xl p-4 flex flex-col h-full">
+            <div class="w-full h-64 md:h-80 bg-gray-300 rounded-xl mb-6 overflow-hidden">
+              <img src="images/20260304141352555.webp" alt="news" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex-grow flex flex-col">
+              <p class="text-red-600 font-normal mb-2">
+                APRIL 2026
+              </p>
+              <h3 class="text-lg md:text-xl 2xl:text-2xl font-bold text-gray-900 mb-3 line-clamp-2">
+                News head number five
+              </h3>
+              <div class="mt-auto">
+                <a href="news-detail.html"
+                  class="border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    READ MORE
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Slide 6-->
+        <div class="swiper-slide">
+          <div class="bg-[#F9F9F9] rounded-2xl p-4 flex flex-col h-full">
+            <div class="w-full h-64 md:h-80 bg-gray-300 rounded-xl mb-6 overflow-hidden">
+              <img src="images/20260304141352555.webp" alt="news" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex-grow flex flex-col">
+              <p class="text-red-600 font-normal mb-2">
+                APRIL 2026
+              </p>
+              <h3 class="text-lg md:text-xl 2xl:text-2xl font-bold text-gray-900 mb-3 line-clamp-2">
+                News head number six
+              </h3>
+              <div class="mt-auto">
+                <a href="news-detail.html"
+                  class="border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    READ MORE
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Slide 7-->
+        <div class="swiper-slide">
+          <div class="bg-[#F9F9F9] rounded-2xl p-4 flex flex-col h-full">
+            <div class="w-full h-64 md:h-80 bg-gray-300 rounded-xl mb-6 overflow-hidden">
+              <img src="images/20260304141352555.webp" alt="news" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex-grow flex flex-col">
+              <p class="text-red-600 font-normal mb-2">
+                APRIL 2026
+              </p>
+              <h3 class="text-lg md:text-xl 2xl:text-2xl font-bold text-gray-900 mb-3 line-clamp-2">
+                News head number seven
+              </h3>
+              <div class="mt-auto">
+                <a href="news-detail.html"
+                  class="border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    READ MORE
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="site-section-gap">
+  </div>
+  <!--Contact Form-->
+  <section class="bg-[#F9F9F9]">
+    <div class="flex mx-auto max-w-[1440px] pt-12 sm:pt-20 px-4 sm:px-8 gap-48 justify-between">
+      <!--Form-->
+      <div class="lg:max-w-[640px] w-full flex-1">
+        <p class="text-black/40 uppercase sm:text-lg max-sm:text-center max-sm:justify-center">
+          for more information.
+        </p>
+        <h2 class="text-4xl sm:text-5xl font-bold max-sm:text-center max-sm:justify-center">
+          Contact Us
+        </h2>
+        <form action="" aria-label="Contact Form" class="flex flex-col gap-3 w-full mt-4 pb-12 sm:pb-20">
+          <input type="text" placeholder="NAME / SURNAME*" aria-label="Name / Surname" required autocomplete="name"
+            class="bg-white rounded-full w-full px-6 sm:px-12 h-14 md:h-16 outline-none border border-transparent focus:border-[#E30613]" />
+          <input type="text" placeholder="COUNTRY*" aria-label="Country" required autocomplete="country-name"
+            class="bg-white rounded-full w-full px-6 sm:px-12 h-14 md:h-16 outline-none border border-transparent focus:border-[#E30613]" />
+          <input type="email" placeholder="E-MAIL*" aria-label="Email" required autocomplete="email"
+            class="bg-white rounded-full w-full px-6 sm:px-12 h-14 md:h-16 outline-none border border-transparent focus:border-[#E30613]" />
+          <input type="tel" placeholder="PHONE NUMBER*" aria-label="Phone Number" required autocomplete="tel"
+            class="bg-white rounded-full w-full px-6 sm:px-12 h-14 md:h-16 outline-none border border-transparent focus:border-[#E30613]" />
+          <textarea placeholder="MESSAGE*" aria-label="Message" required
+            class="bg-white rounded-4xl w-full px-6 sm:px-12 py-4 sm:py-8 h-42 sm:h-64 resize-y outline-none border border-transparent focus:border-[#E30613]"></textarea>
+          <div class="sm:flex w-full items-start justify-between gap-2">
+            <div>
+              reCAPTCHA
+            </div>
+            <button type="submit" aria-label="Send contact form"
+              class="max-sm:mt-2 cursor-pointer border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit mt-2 flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+              <span class="group-hover:-translate-x-4 transition-all duration-300">
+                SEND
+              </span>
+              <i data-aether-icon="right-arrow"
+                class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+              </i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!--Mascot-->
+      <img src="images/20260305113532740.webp" alt="Contact" loading="lazy"
+        class="max-lg:hidden lg:w-96 xl:w-[550px] h-fit shrink-0 mt-auto pointer-events-none select-none" />
+    </div>
+  </section>
+  <div class="site-section-gap">
+  </div>
+  <!--FAQS-->
+  <section class="site-container">
+    <h2 class="uppercase text-[#E30613] font-bold text-xl mb-4 sm:mb-8">
+      What We Do?
+    </h2>
+    <div class="w-full space-y-4" data-aether-ui="accordion-group">
+      <!-- Item 1 -->
+      <div class="border-b border-black/20 w-full py-8 sm:py-12">
+        <button data-aether-trigger="accordion" data-aether-target="acc-item-1"
+          class="w-full flex justify-between gap-8 sm:gap-12 items-center cursor-pointer group">
+          <i data-aether-icon="add"
+            class="size-10 sm:size-14 shrink-0 transition-transform duration-300 group-aria-expanded:rotate-45 cursor-pointer">
+          </i>
+          <h3 class="font-medium text-xl sm:text-3xl lg:text-4xl text-end">
+            What does Agromaster specialize in?
+          </h3>
+        </button>
+        <div id="acc-item-1" data-aether-ui="accordion-panel" class="flex justify-end mt-2 md:mt-4">
+          <div class="max-w-3xl text-end text-black/60 sm:text-lg xl:text-xl">
+            Agromaster specializes in developing high-quality agricultural
+            machinery designed to meet farmers’ real field needs.
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="border-b border-black/20 w-full py-8 sm:py-12">
+        <button data-aether-trigger="accordion" data-aether-target="acc-item-2"
+          class="w-full flex justify-between gap-8 sm:gap-12 items-center cursor-pointer group">
+          <i data-aether-icon="add"
+            class="size-10 sm:size-14 shrink-0 transition-transform duration-300 group-aria-expanded:rotate-45 cursor-pointer">
+          </i>
+          <h3 class="font-medium text-xl sm:text-3xl lg:text-4xl text-end">
+            How does Agromaster ensure product
+            quality?
+          </h3>
+        </button>
+        <div id="acc-item-2" data-aether-ui="accordion-panel" class="flex justify-end mt-2 md:mt-4">
+          <div class="max-w-3xl text-end text-black/60 sm:text-lg xl:text-xl">
+            Agromaster specializes in developing high-quality agricultural
+            machinery designed to meet farmers’ real field needs.
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="border-b border-black/20 w-full py-8 sm:py-12">
+        <button data-aether-trigger="accordion" data-aether-target="acc-item-3"
+          class="w-full flex justify-between gap-8 sm:gap-12 items-center cursor-pointer group">
+          <i data-aether-icon="add"
+            class="size-10 sm:size-14 shrink-0 transition-transform duration-300 group-aria-expanded:rotate-45 cursor-pointer">
+          </i>
+          <h3 class="font-medium text-xl sm:text-3xl lg:text-4xl text-end">
+            Why do farmers choose Agromaster
+            products?
+          </h3>
+        </button>
+        <div id="acc-item-3" data-aether-ui="accordion-panel" class="flex justify-end mt-2 md:mt-4">
+          <div class="max-w-3xl text-end text-black/60 sm:text-lg xl:text-xl">
+            Agromaster specializes in developing high-quality agricultural
+            machinery designed to meet farmers’ real field needs.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="site-section-gap">
+  </div>
+  <!--Media-->
+  <section class="site-container">
+    <!--Header-->
+    <div class="lg:flex justify-between items-center gap-32 mb-5 sm:mb-10 max-sm:text-center">
+      <div>
+        <p class="text-[#E30613] mb-2">
+          MEIDA
+        </p>
+        <h2 class="text-4xl sm:text-5xl mb-5">
+          Agromaster
+          <br />
+          <span class="font-bold">
+            Media
+          </span>
+        </h2>
+      </div>
+      <p class="text-black/60 max-lg:mt-5 xl:max-w-xl 2xl:text-lg">
+        Agromaster media content showcases product quality and agricultural
+        expertise.
+      </p>
+    </div>
+    <!--Grid-->
+    <div class="grid grid-cols-12 gap-5 w-full justify-items-center">
+      <!--Box 1-->
+      <div class="col-span-12 md:col-span-6 2xl:col-span-3 size-full">
+        <div class="size-full 2xl:aspect-7/8 min-h-64 bg-[#2A2A2A] px-6 py-12 sm:p-12 flex flex-col rounded-3xl">
+          <p class="uppercase sm:text-lg mb-1 text-[#E30613]">
+            Documents
+          </p>
+          <p class="text-3xl sm:text-4xl xl:text-5xl font-light mb-5 text-white">
+            Corporate
+            <br />
+            <span class="font-bold">
+              Materials
+            </span>
+          </p>
+          <a href="#"
+            class="mt-auto border border-white text-white py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit flex items-center group gap-2 transition-all duration-300 hover:text-black hover:bg-white active:scale-95">
+            <span class="group-hover:-translate-x-4 transition-all duration-300">
+              COMPANY
+            </span>
+            <i data-aether-icon="right-arrow"
+              class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+            </i>
+          </a>
+        </div>
+      </div>
+      <!--Box 2-->
+      <div class="col-span-12 md:col-span-6 2xl:col-span-3 size-full">
+        <div class="size-full 2xl:aspect-7/8 min-h-64 bg-[#E30613] px-6 py-12 sm:p-12 flex flex-col rounded-3xl">
+          <p class="uppercase sm:text-lg mb-1 text-black">
+            World
+          </p>
+          <p class="text-3xl sm:text-4xl xl:text-5xl font-light mb-5 text-white">
+            News &
+            <br />
+            <span class="font-bold">
+              Exhibitions
+            </span>
+          </p>
+          <a href="#"
+            class="mt-auto border border-white text-white py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit flex items-center group gap-2 transition-all duration-300 hover:text-[#E30613] hover:bg-white active:scale-95">
+            <span class="group-hover:-translate-x-4 transition-all duration-300">
+              VIEW ALL
+            </span>
+            <i data-aether-icon="right-arrow"
+              class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+            </i>
+          </a>
+        </div>
+      </div>
+      <!--Box 3-->
+      <div class="col-span-12 md:col-span-6 2xl:col-span-3 size-full">
+        <div class="size-full 2xl:aspect-7/8 min-h-64 bg-[#F9F9F9] px-6 py-12 sm:p-12 flex flex-col rounded-3xl">
+          <p class="uppercase sm:text-lg mb-1 text-black">
+            ADVERTORIAL
+          </p>
+          <p class="text-3xl sm:text-4xl xl:text-5xl font-light mb-5 text-[#E30613]">
+            Corporate
+            <br />
+            Movie
+          </p>
+          <a href="#"
+            class="mt-auto border border-[#E30613] text-[#E30613] py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+            <span class="group-hover:-translate-x-4 transition-all duration-300">
+              WATCH
+            </span>
+            <i data-aether-icon="right-arrow"
+              class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+            </i>
+          </a>
+        </div>
+      </div>
+      <!--Box 4-->
+      <div class="col-span-12 md:col-span-6 2xl:col-span-3 size-full">
+        <div class="size-full 2xl:aspect-7/8 min-h-64 bg-[#86CA7C] px-6 py-12 sm:p-12 flex flex-col rounded-3xl">
+          <svg class="text-white size-10 sm:size-16 mb-4 shrink-0" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 66 66" fill="none">
+            <g clip-path="url(#clip0_112_4652)">
+              <path
+                d="M56.1236 9.5819C59.2114 12.6462 61.6864 16.2644 63.4189 20.2598C65.1279 24.1844 66 28.4273 66 32.7055C66.0354 38.4687 64.4796 44.1258 61.5096 49.064C58.575 54.014 54.4146 58.1273 49.4293 60.9912C44.4557 63.914 38.775 65.4462 33 65.4108C27.5432 65.4462 22.1571 64.079 17.3839 61.4273L0 66.0001L4.71429 49.0523C1.77964 44.114 0.259286 38.4569 0.294643 32.7055C0.259286 26.954 1.77964 21.2969 4.71429 16.3469C7.59 11.4087 11.7032 7.29547 16.6414 4.41976C21.5914 1.48511 27.2486 -0.0352425 33 0.000114605C37.2782 0.000114605 41.5093 0.8369 45.4457 2.49869C49.4175 4.16047 53.0475 6.56476 56.1236 9.57011V9.5819ZM33 59.9658C37.8204 59.9894 42.5464 58.7165 46.695 56.2887C50.8554 53.8962 54.3321 50.4665 56.7836 46.3415C59.2704 42.2283 60.5668 37.514 60.5432 32.7173C60.5432 29.158 59.7889 25.6458 58.3275 22.4048C56.8661 19.0812 54.7918 16.0523 52.2107 13.4948C49.6886 10.949 46.6832 8.9219 43.3714 7.53119C40.0832 6.15226 36.5475 5.4569 32.9882 5.46869C28.1914 5.43333 23.4889 6.70619 19.3639 9.14583C15.2507 11.5501 11.8211 14.968 9.41679 19.093C6.97714 23.218 5.70429 27.9323 5.73964 32.7173C5.71607 37.844 7.20107 42.8648 10.0061 47.1548L10.5954 48.1919L7.79036 58.2098L18.1029 55.558L19.14 56.1473C23.3121 58.6812 28.1089 60.013 32.9882 59.9776L33 59.9658ZM47.8736 39.4823L48.3214 39.7769C48.7693 39.9065 49.1818 40.1658 49.5 40.5076C49.6179 40.9908 49.6414 41.4858 49.5707 41.9808C49.5118 42.8176 49.3114 43.6426 48.9814 44.4087C48.4511 45.4458 47.6379 46.318 46.6243 46.9073C45.6932 47.6144 44.6089 48.0976 43.4539 48.3098C42.1339 48.5101 40.7904 48.5101 39.4704 48.3098C37.4432 47.8265 35.4632 47.1312 33.5775 46.2473C28.5686 44.0905 24.0075 40.0598 19.8825 34.1669L19.5879 33.8723C17.4311 30.8315 16.3468 28.0265 16.3468 25.4808C16.3114 23.0058 17.2661 20.6251 18.9986 18.8573L19.14 18.7158C19.7057 18.0794 20.5071 17.714 21.3557 17.6787H23.1236C23.4536 17.6669 23.7836 17.7376 24.0782 17.9026C24.4082 18.1855 24.6439 18.5744 24.7382 19.0105L27.2368 25.0448C27.5196 25.4808 27.5786 26.0348 27.3782 26.518C26.8832 27.4962 26.235 28.3919 25.4689 29.1698C25.1625 29.4408 24.915 29.7708 24.7382 30.1244C24.6439 30.3719 24.7382 30.643 25.0329 30.9376C26.2232 33.2594 27.8732 35.3219 29.8886 36.9719C31.8332 38.398 33.8957 39.6237 36.0761 40.649C36.8657 41.038 37.455 40.9908 37.8439 40.5076C39.1168 39.0344 40.0007 37.9501 40.4957 37.2665C40.6961 36.8776 40.9436 36.6773 41.2264 36.6773C41.58 36.6773 41.9218 36.7362 42.2636 36.8187C43.0532 37.1133 44.9154 37.9973 47.8618 39.4705L47.8736 39.4823Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_112_4652">
+                <rect width="66" height="66" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="text-3xl font-light mb-5 mt-auto text-white">
+            You can
+            <br />
+            contact us
+            <br />
+            <span class="font-bold">
+              via WhatsApp.
+            </span>
+          </p>
+          <a href="#"
+            class="border border-white text-white py-2 px-12 font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit flex items-center group gap-2 transition-all duration-300 hover:text-[#86CA7C] hover:bg-white active:scale-95">
+            <span class="group-hover:-translate-x-4 transition-all duration-300">
+              CALL US
+            </span>
+            <i data-aether-icon="right-arrow"
+              class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="site-section-gap">
+  </div>
+  <!--Footer-->
+  <footer>
+    <!--Newsletter-->
+    <div class="bg-[#E30613] w-full py-20">
+      <div class="site-container">
+        <div class="md:flex items-center justify-between gap-8 sm:gap-16 xl:gap-32 2xl:gap-48">
+          <p class="text-white sm:text-xl max-md:mb-8 2xl:max-w-xl 2xl:max-w-xl">
+            Join us to stay informed about developments in the agricultural
+            sector!
+          </p>
+          <div class="w-full flex-1">
+            <div class="xl:flex items-center gap-5 flex-1">
+              <!--Mail-->
+              <form action=""
+                class="max-xl:mb-5 w-full bg-[#BF0000] h-16 px-2 flex items-center justify-between rounded-full overflow-hidden">
+                <input type="email" placeholder="E-Mail Address" aria-label="Newsletter e-mail" autocomplete="email"
+                  class="px-4 h-full bg-transparent border-none outline-none text-white flex-1" />
+                <button type="submit" aria-label="Subscribe to newsletter"
+                  class="border border-white cursor-pointer text-white py-2 px-4 sm:px-12 font-semibold sm:font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit flex items-center group gap-2 transition-all duration-300 hover:text-[#E30613] hover:bg-white active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    SEND
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </button>
+              </form>
+              <!--Phone-->
+              <form action=""
+                class="w-full bg-white h-16 px-2 flex items-center justify-between rounded-full overflow-hidden">
+                <input type="tel" placeholder="Phone Number" aria-label="Phone number for newsletter" autocomplete="tel"
+                  class="px-4 h-full bg-transparent border-none outline-none text-[#E30613] flex-1" />
+                <button type="submit" aria-label="Subscribe via phone"
+                  class="border border-[#E30613] cursor-pointer text-[#E30613] py-2 px-4 sm:px-12 font-semibold sm:font-bold backdrop-blur-xs uppercase bg-transparent outline-none rounded-full shrink-0 whitespace-nowrap h-12 w-fit flex items-center group gap-2 transition-all duration-300 hover:text-white hover:bg-[#E30613] active:scale-95">
+                  <span class="group-hover:-translate-x-4 transition-all duration-300">
+                    SEND
+                  </span>
+                  <i data-aether-icon="right-arrow"
+                    class="absolute right-1/2 group-hover:right-5 opacity-0 group-hover:opacity-100 size-6 transition-all duration-300">
+                  </i>
+                </button>
+              </form>
+            </div>
+            <div class="mt-5 text-sm text-white flex items-center gap-2">
+              I consent to the collection and storage of the data I submit.
+              <div class="inline-flex items-center">
+                <label class="flex items-center cursor-pointer relative">
+                  <input type="checkbox"
+                    class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-blue-600 checked:border-blue-600"
+                    id="check1" />
+                  <span
+                    class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
+                      stroke="currentColor" stroke-width="1">
+                      <path fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd">
+                      </path>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#2A2A2A]">
+      <div class="site-container">
+        <!--Header-->
+        <div
+          class="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-8 lg:gap-16 py-12 sm:py-16 border-b border-[#797979]">
+          <!--Logo-->
+          <div class="flex items-center gap-4 sm:gap-8">
+            <div class="text-center">
+              <img src="images/logo-2.webp" alt="Logo" loading="lazy" class="max-sm:w-48 sm:mb-2" />
+              <p class="text-[#D1D1D1] font-normal max-sm:hidden">
+                Agromaster is a brand of Ateşpar.
+              </p>
+            </div>
+            <div class="w-px h-full bg-[#797979] min-h-10 sm:min-h-20">
+            </div>
+            <p class="font-yellowtail text-[#D1D1D1] text-xl sm:text-3xl xl:text-5xl">
+              We knows the soil.
+            </p>
+          </div>
+          <div class="flex items-center max-sm:justify-center gap-5 md:gap-12">
+            <p class="text-[#D1D1D1] text-lg sm:text-xl 2xl:text-2xl font-light max-xl:hidden">
+              FOLLOW US
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg class="text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95"
+                xmlns="http://www.w3.org/2000/svg" width="35" height="28" viewBox="0 0 35 28" fill="none"
+                aria-hidden="true">
+                <path
+                  d="M22.8641 12.7434L15.3125 7.70897C15.1702 7.61406 15.0049 7.55958 14.8341 7.55134C14.6633 7.5431 14.4934 7.58142 14.3427 7.66219C14.192 7.74296 14.066 7.86316 13.9783 8.00995C13.8906 8.15674 13.8444 8.3246 13.8446 8.4956V18.5644C13.8444 18.7354 13.8906 18.9033 13.9783 19.0501C14.066 19.1969 14.192 19.3171 14.3427 19.3978C14.4934 19.4786 14.6633 19.5169 14.8341 19.5087C15.0049 19.5004 15.1702 19.446 15.3125 19.351L22.8641 14.3166C22.9939 14.2305 23.1004 14.1136 23.174 13.9764C23.2477 13.8391 23.2862 13.6858 23.2862 13.53C23.2862 13.3742 23.2477 13.2209 23.174 13.0836C23.1004 12.9464 22.9939 12.8295 22.8641 12.7434ZM15.7325 16.8008V10.2592L20.6379 13.53L15.7325 16.8008ZM33.7305 4.40514C33.594 3.87449 33.3333 3.38385 32.9701 2.97358C32.6069 2.56332 32.1515 2.24515 31.6413 2.04526C26.2733 -0.033007 17.6629 3.13708e-05 17.3058 3.13708e-05C16.9487 3.13708e-05 8.33824 -0.033007 2.96401 2.04526C2.45499 2.24597 2.00081 2.5645 1.63873 2.97471C1.27665 3.38493 1.01698 3.87514 0.881022 4.40514C0.479842 5.96109 0 8.81025 0 13.53C0 18.2498 0.479842 21.0989 0.881022 22.6549C1.01761 23.1855 1.27823 23.6762 1.64145 24.0864C2.00468 24.4967 2.46011 24.8149 2.9703 25.0148C8.33824 27.093 16.9471 27.06 17.3058 27.06H17.4175C18.5046 27.06 26.5424 26.9908 31.6476 25.0148C32.1577 24.8149 32.6132 24.4967 32.9764 24.0864C33.3396 23.6762 33.6003 23.1855 33.7368 22.6549C34.138 21.1021 34.6179 18.2608 34.6179 13.53C34.6179 8.79924 34.1396 5.96109 33.7305 4.40514ZM31.9024 22.1829C31.8418 22.4247 31.7247 22.6487 31.5605 22.8363C31.3964 23.024 31.1901 23.1699 30.9585 23.2622C25.9241 25.202 17.397 25.1721 17.3058 25.1721C17.2145 25.1721 8.69852 25.2035 3.65781 23.2574C3.42622 23.1652 3.21986 23.0192 3.05574 22.8316C2.89162 22.644 2.77444 22.42 2.71386 22.1782C2.33471 20.7324 1.8879 18.0578 1.8879 13.53C1.8879 9.00219 2.33471 6.32766 2.70914 4.87712C2.76972 4.6353 2.8869 4.41135 3.05102 4.2237C3.21514 4.03606 3.4215 3.89011 3.65309 3.79786C8.50501 1.92884 16.6025 1.88794 17.268 1.88794H17.3058C17.3907 1.88794 25.913 1.85647 30.9538 3.80258C31.1853 3.89483 31.3917 4.04078 31.5558 4.22842C31.7199 4.41607 31.8371 4.64002 31.8977 4.88184C32.2721 6.32766 32.7189 9.00219 32.7189 13.5347C32.7189 18.0673 32.2769 20.7324 31.9024 22.1829Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+            <!--Back To Top Button-->
+            <button id="back-to-top" title="Back to Top"
+              class="size-10 p-2 xl:size-14 xl:p-4 2xl:size-18 2xl:p-5 cursor-pointer rounded-full border border-[#747474] text-[#747474] hover:border-white hover:text-white transition-all duration-300 focus:outline-none active:scale-95"
+              aria-label="Back to Top">
+              <i data-aether-icon="up-arrow" class="size-full">
+              </i>
+            </button>
+          </div>
+        </div>
+        <!--Nav-->
+        <div class="flex justify-around gap-12 py-16 xl:py-24 border-b border-[#797979]">
+          <!--Links-->
+          <div class="flex flex-col gap-6 sm:gap-12">
+            <a href="#"
+              class="sm:text-xl 2xl:text-2xl text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95 font-bold">
+              Homepage
+            </a>
+            <a href="#"
+              class="sm:text-xl 2xl:text-2xl text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95 font-bold">
+              Agromaster
+            </a>
+            <a href="#"
+              class="sm:text-xl 2xl:text-2xl text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95 font-bold">
+              Products
+            </a>
+            <a href="#"
+              class="sm:text-xl 2xl:text-2xl text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95 font-bold">
+              Media
+            </a>
+            <a href="#"
+              class="sm:text-xl 2xl:text-2xl text-[#D1D1D1] hover:text-white transition-all duration-300 active:scale-95 font-bold">
+              Contact
+            </a>
+          </div>
+          <!--Contact-->
+          <div class="flex flex-col gap-6 sm:gap-12 max-w-sm max-sm:items-end max-sm:text-end">
+            <p class="text-[#D1D1D1] text-2xl sm:text-3xl 2xl:text-4xl font-bold">
+              Contact Us
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              class="text-[#D1D1D1] sm:text-xl 2xl:text-2xl hover:text-white transition-all duration-300 active:scale-95">
+              info@agromaster.com
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              class="text-[#D1D1D1] sm:text-xl 2xl:text-2xl hover:text-white transition-all duration-300 active:scale-95">
+              0 332 235 64 23
+            </a>
+            <p class="text-[#D1D1D1] sm:text-xl 2xl:text-2xl">
+              Büyükkayacık Osb. Mah, Evrenköy Cd. No: 32, 42250 Büyükkayacık
+              OSB/Selçuklu/Konya
+            </p>
+          </div>
+        </div>
+        <!--Copyright-->
+        <div
+          class="flex flex-wrap items-center justify-center xl:justify-around gap-12 py-12 sm:py-16 border-b border-[#797979]">
+          <a href="#"
+            class="text-[#D1D1D1] sm:text-lg 2xl:text-xl shrink-0 whitespace-nowrap hover:text-white transition-all duration-300 active:scale-95">
+            Information
+            Society Services
+          </a>
+          <a href="#"
+            class="text-[#D1D1D1] sm:text-lg 2xl:text-xl shrink-0 whitespace-nowrap hover:text-white transition-all duration-300 active:scale-95">
+            Personal
+            Data Protection Law
+          </a>
+          <a href="#"
+            class="text-[#D1D1D1] sm:text-lg 2xl:text-xl shrink-0 whitespace-nowrap hover:text-white transition-all duration-300 active:scale-95">
+            Security
+            and Privacy
+          </a>
+          <a href="#"
+            class="text-[#D1D1D1] sm:text-lg 2xl:text-xl shrink-0 whitespace-nowrap hover:text-white transition-all duration-300 active:scale-95">
+            Terms
+            of Use
+          </a>
+        </div>
+        <div class="flex justify-center sm:justify-end items-center py-12 sm:py-16">
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Post Ajans">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="31" viewBox="0 0 80 31" fill="none">
+              <g clip-path="url(#clip0_283_794)">
+                <path
+                  d="M79.9816 25.3584V25.7414H5.98816V25.3584H79.9816ZM79.9816 25.7414H5.98816V25.3584H79.9816V25.7414Z"
+                  fill="#4F4F4F" />
+                <path
+                  d="M3.95804 4.11791C5.83572 2.5741 8.11038 1.80135 10.7837 1.8047C14.3448 1.80972 17.3296 2.86011 19.7299 4.95086C22.0682 7.02489 23.2273 9.57226 23.2407 12.5947C23.2457 15.617 22.09 18.1494 19.7735 20.2117C17.3698 22.3141 14.4017 23.3629 10.8356 23.3595C9.31639 23.3562 7.67656 23.0685 5.92952 22.4914L6.73688 21.2838C7.99648 21.9746 9.39511 22.3175 10.9277 22.3242C13.0299 22.3242 14.8774 21.3942 16.4486 19.5343C18.0147 17.6743 18.7969 15.3494 18.7919 12.5662C18.7869 9.67596 18.0314 7.33432 16.5223 5.53627C15.0131 3.74157 13.0064 2.84171 10.4973 2.83837C9.12041 2.83837 7.80721 3.25819 6.56603 4.09784C5.33657 4.94083 4.20092 6.73218 4.02504 8.76105V31H0V8.27934C0 8.27934 2.05356 5.49948 3.95804 4.11791Z"
+                  fill="#4F4F4F" />
+                <path
+                  d="M52.3708 12.6379C52.3758 15.6369 50.9956 18.1876 48.2452 20.3001C45.4764 22.4043 42.1381 23.4614 38.2237 23.4563C34.3242 23.448 30.9977 22.3892 28.2272 20.2767C25.4568 18.1575 24.0698 15.5985 24.0648 12.6012C24.0648 9.63396 25.4249 7.08324 28.1954 4.96907C30.9558 2.86494 34.2773 1.81287 38.1717 1.81789C42.0963 1.81789 45.4329 2.88166 48.2084 4.99249C50.9688 7.11502 52.3657 9.66406 52.3708 12.6379ZM47.9219 12.6346C47.9169 9.94506 46.9571 7.64691 45.061 5.75018C43.1482 3.85177 40.8735 2.90508 38.2119 2.90508C35.5336 2.89672 33.2388 3.84006 31.3578 5.73847C29.4516 7.62851 28.5086 9.92164 28.5203 12.6078C28.5254 15.2974 29.4684 17.5972 31.3812 19.5057C33.2774 21.4141 35.5788 22.3742 38.2572 22.3758C40.9171 22.3825 43.185 21.4275 45.0929 19.5174C46.9823 17.6156 47.9303 15.3241 47.9236 12.6346H47.9219Z"
+                  fill="#4F4F4F" />
+                <path
+                  d="M67.1024 18.1061C66.9333 19.757 66.1041 21.0699 64.5966 22.0568C63.0858 23.0369 61.2031 23.527 58.91 23.527C55.7626 23.527 53.1161 22.7024 50.9755 21.0683L52.2501 19.6783C54.1345 21.5182 56.3556 22.4448 58.915 22.4448C60.4862 22.4448 61.734 22.0819 62.6519 21.3476C63.5832 20.6117 64.0338 19.6583 64.0338 18.4824C64.0338 17.0808 63.2097 15.92 61.5397 14.9984C60.3773 14.403 58.6554 13.5115 56.369 12.3406C53.3004 10.7617 51.7661 8.88839 51.7661 6.69895C51.761 5.11333 52.6036 3.87058 54.2752 2.9657C55.776 2.18794 57.6068 1.80492 59.791 1.81161C61.0758 1.80826 62.389 2.06417 63.7172 2.56094C65.0405 3.05937 66.0137 3.63642 66.6435 4.30379L65.3722 5.6335C63.6218 3.91742 61.5933 2.89378 59.4862 2.89044C56.637 2.88709 55.0725 3.76688 54.7794 5.51475C54.5818 6.92643 55.4913 8.15244 57.5415 9.20284C60.6269 10.7985 62.5933 11.8355 63.4576 12.3289C66.136 13.8644 67.357 15.7962 67.1008 18.1078L67.1024 18.1061Z"
+                  fill="#4F4F4F" />
+                <path
+                  d="M79.0235 5.87418H74.8293V16.716C74.8343 18.8469 75.2497 20.3422 76.0085 21.2103C76.779 22.08 78.0972 22.5182 79.98 22.5216V23.5452C73.8545 23.5419 70.7205 21.2504 70.7188 16.6892V5.87585L66.198 5.88087L67.4677 4.54948H70.7188V0L74.8293 0.00669041V4.53944L79.6383 4.54279L79.0235 5.87585V5.87418Z"
+                  fill="#4F4F4F" />
+                <path
+                  d="M24.3245 29.9479L24.4484 29.9864C24.4484 30.0215 24.4484 30.06 24.4501 30.1034C24.4551 30.1469 24.4702 30.1837 24.4987 30.2138C24.5389 30.2707 24.6394 30.3242 24.8052 30.3777C24.9693 30.4313 25.1586 30.4564 25.3713 30.4564C25.6209 30.4564 25.8052 30.4229 25.9291 30.3543C26.0531 30.2858 26.115 30.1469 26.115 29.9379V27.9475C26.115 27.8906 26.0899 27.8454 26.038 27.8103C25.9844 27.7752 25.9375 27.7585 25.899 27.7585V27.6196H27.187V27.7585C27.1301 27.7585 27.0748 27.7752 27.0229 27.8103C26.971 27.8471 26.9458 27.8906 26.9458 27.9475V30.0315C26.9458 30.2155 26.9056 30.3711 26.8236 30.4965C26.7432 30.6236 26.6309 30.7257 26.4902 30.8026C26.3512 30.8779 26.1837 30.9297 25.9894 30.9598C25.7951 30.9866 25.5874 31 25.3646 31C25.2373 31 25.1134 30.9916 24.9911 30.9749C24.8705 30.9565 24.7566 30.9347 24.6528 30.9063C24.5506 30.8795 24.4585 30.8511 24.3764 30.831C24.2977 30.8076 24.2307 30.7959 24.1771 30.7959C24.1318 30.7959 24.0967 30.8059 24.0732 30.8227C24.0498 30.8411 24.0263 30.8611 23.9945 30.8862L23.9208 30.826L24.3245 29.9479Z"
+                  fill="#4F4F4F" />
+                <path
+                  d="M58.4578 30.8413C58.5616 30.8413 58.6136 30.8029 58.6136 30.7259V27.8741C58.6136 27.7972 58.5616 27.7604 58.4578 27.7604V27.6216H59.7291V27.7604C59.6906 27.7654 59.6688 27.7771 59.6688 27.7989C59.6688 27.8223 59.7325 27.8909 59.8581 28.0046L61.9334 29.9415V27.8758C61.9334 27.7989 61.8748 27.7621 61.7592 27.7621V27.6233H62.8145V27.7621C62.7106 27.7621 62.6587 27.8006 62.6587 27.8758V30.7276C62.6587 30.8045 62.7106 30.843 62.8145 30.843V30.9802H61.6922V30.843C61.7307 30.843 61.7492 30.8313 61.7492 30.8045C61.7492 30.7828 61.7224 30.7493 61.6654 30.6975C61.6118 30.6456 61.5515 30.5871 61.4795 30.5219L59.3372 28.5081V30.7276C59.3372 30.8045 59.3975 30.843 59.5164 30.843V30.9802H58.4528V30.843L58.4578 30.8413Z"
+                  fill="#4F4F4F" />
+                <path
+                  d="M76.7153 29.8106C76.7153 29.8306 76.712 29.854 76.7086 29.8758C76.7086 29.8992 76.7036 29.9226 76.7036 29.9477C76.7036 30.023 76.7606 30.0949 76.8728 30.1585C76.9783 30.2203 77.1106 30.2755 77.2647 30.319C77.4155 30.3608 77.5679 30.396 77.722 30.4211C77.8744 30.4478 77.9934 30.4595 78.0788 30.4595C78.1642 30.4595 78.2597 30.4545 78.3786 30.4461C78.4959 30.4361 78.6131 30.4144 78.727 30.3826C78.8443 30.3475 78.9431 30.304 79.0235 30.2438C79.1022 30.1852 79.1441 30.1066 79.1441 30.0113C79.1441 29.8992 79.0737 29.8172 78.9314 29.7687C78.7907 29.7186 78.6131 29.6768 78.4004 29.6483C78.1877 29.6216 77.9565 29.5931 77.7103 29.5647C77.4624 29.5379 77.2296 29.4911 77.0185 29.4275C76.8058 29.364 76.6266 29.272 76.4875 29.1532C76.3452 29.0311 76.2731 28.8655 76.2731 28.6464C76.2731 28.3203 76.4272 28.0627 76.7338 27.867C77.0386 27.6746 77.4657 27.5776 78.0202 27.5776C78.2915 27.5776 78.5227 27.5977 78.7186 27.6362C78.9113 27.673 79.0754 27.7148 79.2061 27.7633C79.3384 27.8085 79.4439 27.8486 79.531 27.8887C79.6148 27.9255 79.6751 27.9456 79.717 27.9456C79.7622 27.9456 79.799 27.9389 79.8208 27.9255C79.8409 27.9138 79.871 27.9004 79.9062 27.8837L80 27.969L79.5695 28.6849L79.4138 28.6397C79.4087 28.6113 79.402 28.5795 79.3953 28.5477C79.3903 28.5176 79.3652 28.4859 79.3166 28.4558C79.2027 28.3704 79.0235 28.2952 78.7806 28.2366C78.5394 28.1731 78.2681 28.1446 77.9682 28.1446C77.8543 28.1446 77.7438 28.1513 77.6383 28.163C77.5378 28.1764 77.444 28.1982 77.3636 28.23C77.2848 28.2584 77.2195 28.3002 77.1726 28.347C77.1274 28.3972 77.1073 28.4558 77.1073 28.5277C77.1073 28.6381 77.176 28.7184 77.315 28.7669C77.459 28.8154 77.6332 28.8555 77.8476 28.8823C78.062 28.909 78.2915 28.9375 78.5411 28.9659C78.7873 28.9943 79.0185 29.0412 79.2295 29.1081C79.4439 29.175 79.6215 29.2703 79.7638 29.3974C79.9046 29.5245 79.9749 29.7002 79.9749 29.9226C79.9749 30.1451 79.9129 30.3291 79.789 30.4729C79.6667 30.6168 79.5109 30.7288 79.325 30.8091C79.1424 30.8894 78.9381 30.9446 78.7186 30.968C78.4959 30.9948 78.2882 31.0065 78.0922 31.0065C77.8962 31.0065 77.7019 30.9914 77.5059 30.9563C77.3167 30.9245 77.1374 30.886 76.98 30.8442C76.8209 30.7991 76.6885 30.7589 76.5797 30.7221C76.4691 30.682 76.4021 30.6636 76.3787 30.6636C76.3401 30.6636 76.3066 30.6786 76.2748 30.7104L76.1559 30.6335L76.5529 29.7771L76.717 29.8156L76.7153 29.8106Z"
+                  fill="#4F4F4F" />
+                <path
+                  d="M7.06857 30.5449C7.01832 30.6286 6.9932 30.6888 6.9932 30.7423C6.9932 30.8176 7.0535 30.8343 7.15902 30.8343V30.9698H5.98987V30.8343C6.12722 30.8176 6.21599 30.6972 6.25954 30.6135L7.56102 28.1448C7.63138 28.0076 7.67493 27.924 7.67493 27.8487C7.67493 27.7885 7.64143 27.7785 7.60458 27.7651V27.6279H8.92448V27.7651C8.88763 27.7785 8.83906 27.7785 8.83906 27.8487C8.83906 27.9089 8.89601 27.9926 8.95966 28.1063L10.3767 30.6888C10.427 30.7808 10.5057 30.8176 10.5844 30.8343V30.9698H9.34323V30.8561C9.39683 30.8561 9.48393 30.8276 9.48393 30.7507C9.48393 30.6905 9.46551 30.6453 9.42363 30.5667L8.20255 28.297L7.07192 30.5466L7.06857 30.5449Z"
+                  fill="#4F4F4F" />
+                <path
+                  d="M8.55431 29.6536C8.55431 29.503 8.43204 29.3843 8.28464 29.3843C8.13724 29.3843 8.01831 29.5047 8.01831 29.6536C8.01831 29.8024 8.13891 29.9229 8.28464 29.9229C8.43036 29.9229 8.55431 29.8024 8.55431 29.6536Z"
+                  fill="#4F4F4F" />
+                <path
+                  d="M41.6089 30.5449C41.5586 30.6286 41.5302 30.6888 41.5302 30.7423C41.5302 30.8176 41.5905 30.8343 41.6977 30.8343V30.9698H40.5251V30.8343C40.6642 30.8176 40.7529 30.6972 40.7965 30.6135L42.098 28.1448C42.1667 28.0076 42.2102 27.924 42.2102 27.8487C42.2102 27.7885 42.1734 27.7785 42.1415 27.7651V27.6279H43.4614V27.7651C43.4263 27.7785 43.3727 27.7785 43.3727 27.8487C43.3727 27.9089 43.4346 27.9926 43.4949 28.1063L44.9103 30.6888C44.9639 30.7808 45.0426 30.8176 45.118 30.8343V30.9698H43.8802V30.8561C43.9304 30.8561 44.0192 30.8276 44.0192 30.7507C44.0192 30.6905 44.0008 30.6453 43.9572 30.5667L42.7345 28.297L41.6089 30.5466V30.5449Z"
+                  fill="#4F4F4F" />
+                <path
+                  d="M43.0912 29.6536C43.0912 29.503 42.9723 29.3843 42.8215 29.3843C42.6708 29.3843 42.5552 29.5047 42.5552 29.6536C42.5552 29.8024 42.6741 29.9229 42.8215 29.9229C42.9689 29.9229 43.0912 29.8024 43.0912 29.6536Z"
+                  fill="#4F4F4F" />
+              </g>
+              <defs>
+                <clipPath id="clip0_283_794">
+                  <rect width="80" height="31" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/aether.js">
+  </script>
+  <script src="js/aether-icons.js">
+  </script>
+  <script src="js/swiper-bundle.min.js">
+  </script>
+  <script src="js/fancybox.umd.js">
+  </script>
+  <script src="js/countUp.umd.js">
+  </script>
+  <script src="js/main.js">
+  </script>
+</body>
+
+</html>
