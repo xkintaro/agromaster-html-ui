@@ -1,4 +1,4 @@
-## 📷 Demo Link
+## 📷 Demo
 
 - [https://xkintaro.github.io/agromaster-html-ui/](https://xkintaro.github.io/agromaster-html-ui/)
 
